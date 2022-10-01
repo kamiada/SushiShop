@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using UnityEditor;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class WorldTime : MonoBehaviour
@@ -15,9 +18,10 @@ public class WorldTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        fullTime -= Time.deltaTime;
         showTimeOnScreen.text = fullTime.ToString();
         if (fullTime <= 0.0f) {
-            LoadScrene("GameOver")
+            LoadScene("GameOver");
         }
     }
     public void LoadScene(string SceneName)
