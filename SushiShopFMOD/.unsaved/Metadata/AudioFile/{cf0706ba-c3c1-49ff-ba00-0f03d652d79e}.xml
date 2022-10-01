@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{cf0706ba-c3c1-49ff-ba00-0f03d652d79e}">
+		<property name="assetPath">
+			<value>SSJ_SushiOutput_3_ 24-HS_Melon_Squish_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b8392e71-55f0-4e12-94d2-ef05af73c76f}</destination>
+		</relationship>
+	</object>
+</objects>
