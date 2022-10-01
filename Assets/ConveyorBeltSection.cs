@@ -10,9 +10,9 @@ public class ConveyorBeltSection : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Sushi")
+        if (collision.tag == "ConveyorBeltDetector")
         {
-            currentSushiRb = collision.GetComponent<Rigidbody2D>();
+            currentSushiRb = collision.GetComponentInParent<Rigidbody2D>();
         }        
     }
 

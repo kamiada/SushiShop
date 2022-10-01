@@ -6,10 +6,10 @@ using UnityEditor;
 using UnityEngine.SceneManagement;
 
 public class Sushi : MonoBehaviour
-    public var randomIndex1;
-    public var randomIndex2;
-    var random = new Random();
-{
+{ 
+    public int randomIndex1;
+    public int randomIndex2;
+
     public enum PlateColour
     {
         Red = 0,
@@ -54,11 +54,12 @@ public class Sushi : MonoBehaviour
         StartCoroutine(coroutine);
         IEnumerator WaitAndPrint(float waitTime)
         {
+            Debug.Log("start mini game bool" + startMiniGame);
             while (startMiniGame)
             {
                 yield return new WaitForSeconds(waitTime);
-                randomIndex1 = random.Next(0, keyNames.Length); 
-                randomIndex2 = random.Next(0, keyNames.Length); 
+                randomIndex1 = Random.Range(0, keyNames.Length); 
+                randomIndex2 = Random.Range(0, keyNames.Length); 
                 key1 = keyNames[randomIndex1];
                 key2 = keyNames[randomIndex2];
                 Debug.Log(key1 + " " + key2);
@@ -97,7 +98,7 @@ public class Sushi : MonoBehaviour
 
             //every 2 seconds print different keys, if player hits correctly add points, otherwise remove them
             
-            if(Input.GetKeyDown(key1) && InputGetKeyDown(key2)) {
+            if(Input.GetKeyDown(key1) && Input.GetKeyDown(key2)) {
                 AreYouWinningSon += 20.0f;
             } else {
                 AreYouWinningSon -= 15.0f;
