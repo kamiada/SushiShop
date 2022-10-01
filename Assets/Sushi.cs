@@ -1,6 +1,14 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
+using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class Sushi : MonoBehaviour
+    public var randomIndex1;
+    public var randomIndex2;
+    var random = new Random();
 {
     public enum PlateColour
     {
@@ -17,9 +25,13 @@ public class Sushi : MonoBehaviour
     public float AreYouWinningSon = 0.0f;
     public float points = 15.0f;
     float timer = 10.0f;
-    public string[] keyNames;
-    public string key = "";
-    
+    public string[] keyNames = { "space", "q", "w", "e", "a", "b", "c", "d", "f", "g", "h", "l", "k", "m", "n","x", "z", "v", "r", "t", "p", "i"};
+    public string key1;
+    public string key2;
+    public PlayerCharacter Player;
+    private IEnumerator coroutine;
+    public bool startMiniGame = false;
+
 
     private void Start()
     {
@@ -38,7 +50,20 @@ public class Sushi : MonoBehaviour
             default:
                 break;
         }
-        
+        coroutine = WaitAndPrint(2.0f);
+        StartCoroutine(coroutine);
+        IEnumerator WaitAndPrint(float waitTime)
+        {
+            while (startMiniGame)
+            {
+                yield return new WaitForSeconds(waitTime);
+                randomIndex1 = random.Next(0, keyNames.Length); 
+                randomIndex2 = random.Next(0, keyNames.Length); 
+                key1 = keyNames[randomIndex1];
+                key2 = keyNames[randomIndex2];
+                Debug.Log(key1 + " " + key2);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -66,6 +91,25 @@ public class Sushi : MonoBehaviour
             // Debug.Log("Start minigame... Destroy for now");
             // Destroy(gameObject);
             Debug.Log("Minigame: mash correct buttons and delicious sushi!");
+            startMiniGame = true;
+            timer -= Time.deltaTime;
+            Debug.Log("Current Time" + timer);
+
+            //every 2 seconds print different keys, if player hits correctly add points, otherwise remove them
+            
+            if(Input.GetKeyDown(key1) && InputGetKeyDown(key2)) {
+                AreYouWinningSon += 20.0f;
+            } else {
+                AreYouWinningSon -= 15.0f;
+            }
+
+            if(timer <= 0.0f) {
+                if (AreYouWinningSon >= 100.0f) {
+                    Player.Weight += Weight;
+                    Destroy(gameObject);
+                    //Customer will leave somewhere here
+                }
+            }
         }
     }
 }
