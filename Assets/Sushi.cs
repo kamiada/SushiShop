@@ -13,6 +13,14 @@ public class Sushi : MonoBehaviour
 
     private bool playerInRadius = false;
 
+    //mini game vars 
+    public float AreYouWinningSon = 0.0f;
+    public float points = 15.0f;
+    float timer = 10.0f;
+    public string[] keyNames;
+    public string key = "";
+    
+
     private void Start()
     {
         // Manage the colour of the sushi plate (to start different minigames)
@@ -55,8 +63,9 @@ public class Sushi : MonoBehaviour
     {
         if (playerInRadius)
         {
-            Debug.Log("Start minigame... Destroy for now");
-            Destroy(gameObject);
+            // Debug.Log("Start minigame... Destroy for now");
+            // Destroy(gameObject);
+            Debug.Log("Minigame: mash correct buttons and delicious sushi!");
         }
     }
 }
