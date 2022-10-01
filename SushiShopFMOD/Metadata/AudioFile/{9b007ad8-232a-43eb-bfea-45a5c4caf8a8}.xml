@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{9b007ad8-232a-43eb-bfea-45a5c4caf8a8}">
+		<property name="assetPath">
+			<value>GameJam_UIPositive.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.1010204081632653</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b8392e71-55f0-4e12-94d2-ef05af73c76f}</destination>
+		</relationship>
+	</object>
+</objects>

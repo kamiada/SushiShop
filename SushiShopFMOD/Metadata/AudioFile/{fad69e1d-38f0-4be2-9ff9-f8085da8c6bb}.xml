@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{fad69e1d-38f0-4be2-9ff9-f8085da8c6bb}">
+		<property name="assetPath">
+			<value>GameJam_UIClose.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2666666666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b8392e71-55f0-4e12-94d2-ef05af73c76f}</destination>
+		</relationship>
+	</object>
+</objects>
