@@ -26,8 +26,8 @@ public class Sushi : MonoBehaviour
     //mini game vars 
     public float AreYouWinningSon = 0.0f;
     public float points = 15.0f;
-    float timer = 10.0f;
-    static string[] keyNames = new string[] { "space", "q", "w", "e", "a", "b", "c", "d", "f", "g", "h", "l", "k", "m", "n","x", "z", "v", "r", "t", "p", "i"};
+    float timer = 4.0f;
+    static string[] keyNames = new string[] { "space", "q", "e", "b", "c", "f", "g", "h", "l", "k", "m", "n","x", "z", "v", "r", "t", "p", "i"};
 
     public string key1;
     public string key2;
@@ -60,6 +60,11 @@ public class Sushi : MonoBehaviour
         if(startMiniGame) {
             timer -= Time.deltaTime;
         }
+        if(timer <= 0.0f) {
+            startMiniGame = false;
+            timer = 4.0f;
+        }
+
     }
 
     public void StartMiniGameCoroutine ()
@@ -107,7 +112,8 @@ public class Sushi : MonoBehaviour
             startMiniGame = true;
             StartMiniGameCoroutine();
             Debug.Log("Players points " + AreYouWinningSon);
-            if (Input.GetKeyDown(key1) && Input.GetKeyDown(key2)) {
+            Debug.Log("In interact the keys is " + key1);
+            if (Input.GetKeyDown(key1) || Input.GetKeyDown(key2)) {
                 Debug.Log("winning");
                 AreYouWinningSon += 20.0f;
             } else {
@@ -118,6 +124,7 @@ public class Sushi : MonoBehaviour
             if(timer <= 0.0f) {
                 if (AreYouWinningSon >= 100.0f) {
                     Player.Weight += Weight;
+                    Debug.Log("lost the minigame");
                     Destroy(gameObject);
                     //Customer will leave somewhere here
                 }
