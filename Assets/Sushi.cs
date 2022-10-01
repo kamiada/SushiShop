@@ -9,6 +9,7 @@ public class Sushi : MonoBehaviour
         Green,
     }
     public PlateColour SushiPlateColour;
+    public float Weight = 0.5f;
 
     private bool playerInRadius = false;
 
