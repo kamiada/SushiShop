@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEditor;
 using UnityEngine.SceneManagement;
+using Random = System.Random;
 
 public class Sushi : MonoBehaviour
 { 
-    public int randomIndex1;
-    public int randomIndex2;
+    int randomIndex1;
+    int randomIndex2;
+    Random random = new Random();
 
     public enum PlateColour
     {
@@ -25,7 +27,8 @@ public class Sushi : MonoBehaviour
     public float AreYouWinningSon = 0.0f;
     public float points = 15.0f;
     float timer = 10.0f;
-    public string[] keyNames = { "space", "q", "w", "e", "a", "b", "c", "d", "f", "g", "h", "l", "k", "m", "n","x", "z", "v", "r", "t", "p", "i"};
+    static string[] keyNames = new string[] { "space", "q", "w", "e", "a", "b", "c", "d", "f", "g", "h", "l", "k", "m", "n","x", "z", "v", "r", "t", "p", "i"};
+
     public string key1;
     public string key2;
     public PlayerCharacter Player;
@@ -50,19 +53,26 @@ public class Sushi : MonoBehaviour
             default:
                 break;
         }
-        coroutine = WaitAndPrint(2.0f);
-        StartCoroutine(coroutine);
-        IEnumerator WaitAndPrint(float waitTime)
-        {
-            Debug.Log("start mini game bool" + startMiniGame);
-            while (startMiniGame)
+    }
+
+    public void Update()
+    {
+        if(startMiniGame) {
+            timer -= Time.deltaTime;
+
+            StartCoroutine(WaitAndPrint());
+            IEnumerator WaitAndPrint()
             {
-                yield return new WaitForSeconds(waitTime);
-                randomIndex1 = Random.Range(0, keyNames.Length); 
-                randomIndex2 = Random.Range(0, keyNames.Length); 
-                key1 = keyNames[randomIndex1];
-                key2 = keyNames[randomIndex2];
-                Debug.Log(key1 + " " + key2);
+                while (startMiniGame)
+                {
+                    //yield return new WaitForSeconds(waitTime);
+                    yield return new WaitForSecondsRealtime(2);
+                    randomIndex1 = random.Next(1, keyNames.Length);
+                    randomIndex2 = random.Next(1, keyNames.Length);
+                    key1 = keyNames[randomIndex1];
+                    key2 = keyNames[randomIndex2];
+                    Debug.Log("Smash" + key1 + " and " + key2);
+                }
             }
         }
     }
@@ -89,27 +99,23 @@ public class Sushi : MonoBehaviour
     {
         if (playerInRadius)
         {
-            // Debug.Log("Start minigame... Destroy for now");
-            // Destroy(gameObject);
             Debug.Log("Minigame: mash correct buttons and delicious sushi!");
-            startMiniGame = true;
-            timer -= Time.deltaTime;
-            Debug.Log("Current Time" + timer);
-
             //every 2 seconds print different keys, if player hits correctly add points, otherwise remove them
-            
-            if(Input.GetKeyDown(key1) && Input.GetKeyDown(key2)) {
+            startMiniGame = true;
+
+            if (Input.GetKeyDown(key1) && Input.GetKeyDown(key2)) {
                 AreYouWinningSon += 20.0f;
             } else {
                 AreYouWinningSon -= 15.0f;
             }
-
+            Debug.Log("What time is it? " + timer);
             if(timer <= 0.0f) {
                 if (AreYouWinningSon >= 100.0f) {
                     Player.Weight += Weight;
                     Destroy(gameObject);
                     //Customer will leave somewhere here
                 }
+                startMiniGame = false;
             }
         }
     }
