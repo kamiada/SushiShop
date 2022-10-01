@@ -6,7 +6,7 @@ public class SushiSpawner : MonoBehaviour
 
     void Start()
     {
-        Invoke("spawnSushi", 1f);
+        InvokeRepeating("spawnSushi", 1f, 0.1f);
     }
 
     void spawnSushi()
@@ -34,7 +34,7 @@ public class SushiSpawner : MonoBehaviour
         }
 
         // Shoot out sushi
-        spawnedSushi.GetComponent<Rigidbody2D>().AddForce(new Vector2(-100f, 0f));
+        spawnedSushi.GetComponent<Rigidbody2D>().AddForce(new Vector2(-200f, 0f));
     }
 
     
