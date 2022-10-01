@@ -8,17 +8,24 @@ public class PlayerCharacter : MonoBehaviour
     public float Weight = 0.5f; // Each sushi
 
     Rigidbody2D rigidbody2D;
+    Animator animator;
 
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
     {
         // Move the character on a 2D plane
         // Must be in FixedUpdate as uses Rigidbodies
-        rigidbody2D.AddForce(new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * (Speed / Weight));
+        float horizontalAxis = Input.GetAxisRaw("Horizontal");
+        float verticalAxis = Input.GetAxisRaw("Vertical");
+
+        rigidbody2D.AddForce(new Vector2(horizontalAxis, verticalAxis) * (Speed / Weight));
+
+        ManageSpriteFlipping(horizontalAxis, verticalAxis);
     }
 
     private void Update()
@@ -41,5 +48,21 @@ public class PlayerCharacter : MonoBehaviour
             // If we're near a sushi, interact with it
             CurrentSushi.Interact();
         }
+    }
+
+    void ManageSpriteFlipping(float horizontalAxis, float verticalAxis)
+    {
+        if (horizontalAxis != 0 || verticalAxis != 0)
+        {
+            animator.SetBool("IsWalking", true);
+
+            if (horizontalAxis < 0) // If moving left, flip sprite
+                GetComponent<SpriteRenderer>().flipX = true;
+            if (horizontalAxis > 0)
+                GetComponent<SpriteRenderer>().flipX = false;
+        }
+
+        else
+            animator.SetBool("IsWalking", false);
     }
 }

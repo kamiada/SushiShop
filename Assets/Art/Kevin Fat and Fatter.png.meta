@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 20662b8813bb04a66b136d1297a2ded3
+guid: 85814a332f8a54f2e9a565b42d5ac68a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kevintransparent_0
+      name: kevintransparentset_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 907
-        width: 295
-        height: 377
+        x: 504
+        y: 719
+        width: 284
+        height: 360
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acc9cea875ab543a986223f08e62d6ce
-      internalID: -1796992816
+      spriteID: 9099b7b4f99884e1f9f83373853b3792
+      internalID: 1018124033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kevintransparent_1
+      name: kevintransparentset_3
       rect:
         serializedVersion: 2
-        x: 295
-        y: 907
-        width: 295
-        height: 377
+        x: 771
+        y: 721
+        width: 284
+        height: 360
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f37183201d6db4f3390843c038aa482f
-      internalID: 156343638
+      spriteID: c7a072121318b4283a18a0f34bfb9456
+      internalID: -1217499770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kevintransparent_2
+      name: kevintransparentset_6
       rect:
         serializedVersion: 2
-        x: 8
-        y: 540
-        width: 295
-        height: 377
+        x: 508
+        y: 402
+        width: 284
+        height: 360
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb2bc362ef9f14ed3ae9b47d7e2b36ce
-      internalID: 514747941
+      spriteID: efb617d0bba554d59a6ad87e48739de9
+      internalID: -129438508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kevintransparent_3
+      name: kevintransparentset_7
       rect:
         serializedVersion: 2
-        x: 295
-        y: 530
-        width: 295
-        height: 377
+        x: 780
+        y: 395
+        width: 284
+        height: 360
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03311476cc0e04b6a981058664d6bf9b
-      internalID: 1321641816
+      spriteID: aee6915da5c9d408692efdb53079e97b
+      internalID: -1097647755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kevintransparent_4
+      name: kevintransparentset_10
       rect:
         serializedVersion: 2
-        x: 16
-        y: 177
-        width: 295
-        height: 377
+        x: 519
+        y: 77
+        width: 284
+        height: 360
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +214,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35aba0136c29b402589c7cd73d2967bf
-      internalID: 843069835
+      spriteID: b7db1e1c10dee460c9503b17bd3f4e95
+      internalID: 1974837545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kevintransparent_5
+      name: kevintransparentset_11
       rect:
         serializedVersion: 2
-        x: 295
-        y: 153
-        width: 295
-        height: 377
+        x: 803
+        y: 71
+        width: 284
+        height: 360
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e10919ab7b9ee43988deab4716fa1b71
-      internalID: -1365853424
+      spriteID: 7b1015adc58e6422fa9a874462729708
+      internalID: 449959058
       vertices: []
       indices: 
       edges: []
@@ -252,12 +252,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kevintransparent_5: -1365853424
-      kevintransparent_1: 156343638
-      kevintransparent_0: -1796992816
-      kevintransparent_4: 843069835
-      kevintransparent_2: 514747941
-      kevintransparent_3: 1321641816
+      kevintransparentset_1: -671598018
+      kevintransparentset_3: -1217499770
+      kevintransparentset_2: 1018124033
+      kevintransparentset_4: -1459403638
+      kevintransparentset_10: 1974837545
+      kevintransparentset_0: 749674669
+      kevintransparentset_5: 2019456332
+      kevintransparentset_9: 2118475170
+      kevintransparentset_11: 449959058
+      kevintransparentset_8: -1040672760
+      kevintransparentset_6: -129438508
+      kevintransparentset_7: -1097647755
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

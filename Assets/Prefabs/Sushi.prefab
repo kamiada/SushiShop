@@ -124,7 +124,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.08025527, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -168,8 +168,10 @@ MonoBehaviour:
   Weight: 0.5
   AreYouWinningSon: 0
   points: 15
-  keyNames: []
-  key: 
+  key1: 
+  key2: 
+  Player: {fileID: 0}
+  startMiniGame: 0
 --- !u!50 &7178369122836792479
 Rigidbody2D:
   serializedVersion: 4

@@ -3,10 +3,11 @@ using UnityEngine;
 public class SushiSpawner : MonoBehaviour
 {
     public GameObject SushiPrefab;
+    public float SpawnDelay = 2f;
 
     void Start()
     {
-        InvokeRepeating("spawnSushi", 1f, 1f);
+        InvokeRepeating("spawnSushi", 1f, SpawnDelay);
     }
 
     void spawnSushi()

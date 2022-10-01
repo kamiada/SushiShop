@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &5858699
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &208679680
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &272488860
@@ -576,7 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &418744365
@@ -703,7 +703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &476461194
@@ -830,7 +830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &514516034
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &640080470
@@ -1200,7 +1200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &687988346
@@ -1327,7 +1327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &731578975
@@ -1485,7 +1485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &993244156
@@ -1612,7 +1612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1078101042
@@ -1771,7 +1771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1160951156
@@ -1898,7 +1898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1170944853
@@ -2025,7 +2025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1204254659
@@ -2152,7 +2152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1221196132
@@ -2238,6 +2238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SushiPrefab: {fileID: 6482484956459340250, guid: 46850a845b0484151938ef680cb25fa0, type: 3}
+  SpawnDelay: 2
 --- !u!212 &1268210752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2377,7 +2378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1287784047
@@ -2573,7 +2574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1568676361
@@ -2715,7 +2716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1632481488
@@ -2908,7 +2909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1653071847
@@ -3035,7 +3036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1135060034}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1685286411
@@ -3147,7 +3148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5858c2cd7d44a41a09260055f2a33dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeltForce: 5
+  BeltForce: 9
   NextSection: {fileID: 1568676358}
   currentSushiRb: {fileID: 0}
 --- !u!212 &1887262126
@@ -3230,6 +3231,7 @@ GameObject:
   - component: {fileID: 2099346132}
   - component: {fileID: 2099346131}
   - component: {fileID: 2099346135}
+  - component: {fileID: 2099346136}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3266,14 +3268,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 10
+  m_LinearDrag: 20
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &2099346133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3314,13 +3316,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -1796992816, guid: 20662b8813bb04a66b136d1297a2ded3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.95, y: 3.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3357,6 +3359,26 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &2099346136
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099346130}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3af9e2494b21b4a56b5a322380ed54a2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6482484955398589565
 PrefabInstance:
   m_ObjectHideFlags: 0
