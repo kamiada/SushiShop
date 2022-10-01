@@ -333,7 +333,7 @@
 	</object>
 	<object class="SoundScatterer" id="{cdf65482-df55-47a2-a30f-586de0a4688d}">
 		<property name="length">
-			<value>11.5</value>
+			<value>9.5</value>
 		</property>
 		<property name="volume">
 			<value>-14</value>
@@ -394,7 +394,7 @@
 			<value>ClonkinessVariety</value>
 		</property>
 		<property name="volume">
-			<value>-12</value>
+			<value>-18.5</value>
 		</property>
 		<property name="spawnRate">
 			<value>20</value>
@@ -424,6 +424,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{72c5bdd4-4fd5-4311-ba00-9b119568309c}">
+		<property name="volume">
+			<value>5.5</value>
+		</property>
 		<property name="name">
 			<value>Clonkiness</value>
 		</property>
@@ -1362,7 +1365,7 @@
 	</object>
 	<object class="AutomationPoint" id="{be012fcc-82bd-4bd8-820b-4e341556f0fe}">
 		<property name="position">
-			<value>11.5</value>
+			<value>9.5</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -1424,7 +1427,7 @@
 	</object>
 	<object class="AutomationPoint" id="{11ed9784-815f-4f7f-ab6c-dc91b4a2226e}">
 		<property name="position">
-			<value>11.5</value>
+			<value>9.5</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -1449,6 +1452,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{ae615070-fa57-4af4-b6f4-f9ae1a5cae41}">
+		<property name="volume">
+			<value>-10.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{8d5296cb-5b43-44ad-bf0c-b83458935d72}</destination>
 		</relationship>
