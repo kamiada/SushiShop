@@ -59,23 +59,26 @@ public class Sushi : MonoBehaviour
     {
         if(startMiniGame) {
             timer -= Time.deltaTime;
+        }
+    }
 
-            StartCoroutine(WaitAndPrint());
-            IEnumerator WaitAndPrint()
+    public void StartMiniGameCoroutine ()
+    {
+        StartCoroutine(WaitAndPrint());
+        IEnumerator WaitAndPrint()
+        {
+            while (startMiniGame)
             {
-                while (startMiniGame)
-                {
-                    //yield return new WaitForSeconds(waitTime);
-                    yield return new WaitForSecondsRealtime(2);
-                    randomIndex1 = random.Next(1, keyNames.Length);
-                    randomIndex2 = random.Next(1, keyNames.Length);
-                    key1 = keyNames[randomIndex1];
-                    key2 = keyNames[randomIndex2];
-                    Debug.Log("Smash" + key1 + " and " + key2);
-                }
+                yield return new WaitForSecondsRealtime(2);
+                randomIndex1 = random.Next(1, keyNames.Length);
+                randomIndex2 = random.Next(1, keyNames.Length);
+                key1 = keyNames[randomIndex1];
+                key2 = keyNames[randomIndex2];
+                Debug.Log("Smash " + key1 + " and " + key2);
             }
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -102,10 +105,13 @@ public class Sushi : MonoBehaviour
             Debug.Log("Minigame: mash correct buttons and delicious sushi!");
             //every 2 seconds print different keys, if player hits correctly add points, otherwise remove them
             startMiniGame = true;
-
+            StartMiniGameCoroutine();
+            Debug.Log("Players points " + AreYouWinningSon);
             if (Input.GetKeyDown(key1) && Input.GetKeyDown(key2)) {
+                Debug.Log("winning");
                 AreYouWinningSon += 20.0f;
             } else {
+                Debug.Log("loosing");
                 AreYouWinningSon -= 15.0f;
             }
             Debug.Log("What time is it? " + timer);
