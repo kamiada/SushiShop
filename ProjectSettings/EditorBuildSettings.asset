@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Gameplay.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 35656d721947c4c978684e95151b7591
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 3df05d58448d147148f4473bb35c2ddb
+  - enabled: 1
+    path: Assets/Scenes/HappyEnding.unity
+    guid: a4816f4f7453d4051b6d2091d8c9efdf
+  - enabled: 1
+    path: Assets/Scenes/MainScene-Duncan.unity
+    guid: 1d21d1c95f95447b58df22fb06d35859
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 8e1f87168475c44918717ccdda7b60a7
   m_configObjects: {}
