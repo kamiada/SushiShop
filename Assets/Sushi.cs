@@ -59,14 +59,14 @@ public class Sushi : MonoBehaviour
     {
         if(startMiniGame) {
             timer -= Time.deltaTime;
-            coroutine = WaitAndPrint(2.0f);
 
-            StartCoroutine(coroutine);
-            IEnumerator WaitAndPrint(float waitTime)
+            StartCoroutine(WaitAndPrint());
+            IEnumerator WaitAndPrint()
             {
                 while (startMiniGame)
                 {
-                    yield return new WaitForSeconds(waitTime);
+                    //yield return new WaitForSeconds(waitTime);
+                    yield return new WaitForSecondsRealtime(2);
                     randomIndex1 = random.Next(1, keyNames.Length);
                     randomIndex2 = random.Next(1, keyNames.Length);
                     key1 = keyNames[randomIndex1];
@@ -108,7 +108,7 @@ public class Sushi : MonoBehaviour
             } else {
                 AreYouWinningSon -= 15.0f;
             }
-
+            Debug.Log("What time is it? " + timer);
             if(timer <= 0.0f) {
                 if (AreYouWinningSon >= 100.0f) {
                     Player.Weight += Weight;
