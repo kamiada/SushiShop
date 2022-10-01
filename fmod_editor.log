@@ -1,0 +1,101 @@
+[LOG] System::create                           : Header version = 2.02.07. Current version = 2.02.07.
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0x0.
+[LOG] SystemI::init                            : Initialize version=20207 (125130), maxchannels=256, flags=0x00020000
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
+[LOG] OutputCoreAudio::init                    : Output running 2 channels at 44100Hz sample rate.
+[LOG] OutputCoreAudio::init                    : Maximum hardware read size: 1024 samples, Software buffer size: 512 samples, Number of software buffers: 4.
+[LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
+[LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 0x7f9b0730c008 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : done
+[LOG] PlaybackSystem::init                     : 
+[LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] PlaybackSystem::init                     : done
+[LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = SushiShopFMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0x7f9b0a5efc28 : node = 0x7f9b0a5efef0
+[LOG] SystemI::createSound                     : add node to async list : head = 0x7f9b0a5d7358.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f9b0a5efc28
+[LOG] SystemI::createSoundInternal             :     Create name='SushiShopFMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2544640
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39136
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f9b0a5f0000
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = SushiShopFMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0x7f9b0a5f1da8 : node = 0x7f9b0a5f1f60
+[LOG] SystemI::createSound                     :     add node to async list : head = 0x7f9b0a5d7358.  list count = 0
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Microwave_Gamejame01_6', format=5, channels=2, frequency=48000, lengthbytes=129760, lengthpcm=768000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.005020.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f9b0a5efc28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f9b0a5f1da8
+[LOG] SystemI::createSoundInternal             :     Create name='SushiShopFMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2544640
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39136
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f9b0a5f2070
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Microwave_Gamejame01_0', format=5, channels=2, frequency=48000, lengthbytes=144064, lengthpcm=864000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.005108.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f9b0a5f1da8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f9b06e34b08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f9b06e34b08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f9b06e94968
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f9b06e94968
+[LOG] SoundI::release                          :  (0x7f9afd6d5ae8)
+[LOG] SoundI::release                          :     ClonkinessVariety_Microwave_Gamejame01_0 (0x7f9afd6dc2e8)
+[LOG] SoundI::release                          :  (0x7f9afd6d49e8)
+[LOG] SoundI::release                          :     ClonkinessVariety_Microwave_Gamejame01_1 (0x7f9afd6dfbc8)
+[LOG] SoundI::release                          :  (0x7f9afd69d308)
+[LOG] SoundI::release                          :     ClonkinessVariety_Microwave_Gamejame01_2 (0x7f9afd6ab318)
+[LOG] SoundI::release                          :  (0x7f9afd6ae4b8)
+[LOG] SoundI::release                          :     ClonkinessVariety_Microwave_Gamejame01_3 (0x7f9afd6f6dd8)
+[LOG] SoundI::release                          :  (0x7f9afd676548)
+[LOG] SoundI::release                          :     ClonkinessVariety_Microwave_Gamejame01_4 (0x7f9afd682198)
+[LOG] SoundI::release                          :  (0x7f9afd6f4498)
+[LOG] SoundI::release                          :     ClonkinessVariety_Microwave_Gamejame01_5 (0x7f9afd68bfb8)
+[LOG] SoundI::release                          :  (0x7f9afd686728)
+[LOG] SoundI::release                          :     ClonkinessVariety_Microwave_Gamejame01_6 (0x7f9afd693a78)
+[LOG] SoundI::release                          :  (0x7f9afd639ff8)
+[LOG] SoundI::release                          :     Clonkiness01_Microwave_Gamejame01_0 (0x7f9afd64b648)
+[LOG] SoundI::release                          : Microwave_Gamejame01_0 (0x7f9b0a5f1da8)
+[LOG] SoundI::release                          :     Microwave_Gamejame01_0 (0x7f9b06e9f1d8)
+[LOG] SoundI::release                          :     Microwave_Gamejame01_0 (0x7f9b06e94968)
+[LOG] SoundI::release                          : Microwave_Gamejame01_6 (0x7f9b0a5efc28)
+[LOG] SoundI::release                          :     Microwave_Gamejame01_6 (0x7f9b06e6e3a8)
+[LOG] SoundI::release                          :     Microwave_Gamejame01_6 (0x7f9b06e34b08)
+[LOG] SoundI::release                          : SecondSetVariety_Microwave_Gamejame01_1 (0x7f9b0a5daf88)
+[LOG] SoundI::release                          :     SecondSetVariety_Microwave_Gamejame01_1 (0x7f9b06fbf1c8)
+[LOG] SoundI::release                          :     SecondSetVariety_Microwave_Gamejame01_1 (0x7f9b06f25a08)
+[LOG] SoundI::release                          :  (0x7f9afd6dd9a8)
+[LOG] SoundI::release                          :     Clonkiness01_Microwave_Gamejame01_1 (0x7f9afd6cb1f8)
+[LOG] SoundI::release                          :  (0x7f9afd6eacc8)
+[LOG] SoundI::release                          :     Clonkiness01_Microwave_Gamejame01_2 (0x7f9afd69d488)
+[LOG] SoundI::release                          :  (0x7f9afd62d858)
+[LOG] SoundI::release                          :     Clonkiness01_Microwave_Gamejame01_3 (0x7f9afd62ece8)
+[LOG] SoundI::release                          :  (0x7f9afd648338)
+[LOG] SoundI::release                          :     Trasintion_Microwave_Gamejame01_Second (0x7f9afd6578b8)
+[LOG] SoundI::release                          :  (0x7f9afd69ebb8)
+[LOG] SoundI::release                          :     Trasintion_Microwave_Gamejame01_1 (0x7f9afd6b2858)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
