@@ -42,8 +42,8 @@ public class PlayerCharacter : MonoBehaviour
                 return;
 
             // Add weight
-            Weight += CurrentSushi.Weight;
-            Debug.Log(Weight);
+            //Weight += CurrentSushi.Weight;
+            //Debug.Log(Weight);
 
             // If we're near a sushi, interact with it
             CurrentSushi.Interact();

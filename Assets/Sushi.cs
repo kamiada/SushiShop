@@ -26,8 +26,8 @@ public class Sushi : MonoBehaviour
     //mini game vars 
     public float AreYouWinningSon = 0.0f;
     public float points = 15.0f;
-    float timer = 10.0f;
-    static string[] keyNames = new string[] { "space", "q", "w", "e", "a", "b", "c", "d", "f", "g", "h", "l", "k", "m", "n","x", "z", "v", "r", "t", "p", "i"};
+    float timer = 4.0f;
+    static string[] keyNames = new string[] { "space", "q", "e", "b", "c", "f", "g", "h", "l", "k", "m", "n","x", "z", "v", "r", "t", "p", "i"};
 
     public string key1;
     public string key2;
@@ -59,23 +59,31 @@ public class Sushi : MonoBehaviour
     {
         if(startMiniGame) {
             timer -= Time.deltaTime;
+        }
+        if(timer <= 0.0f) {
+            startMiniGame = false;
+            timer = 4.0f;
+        }
 
-            StartCoroutine(WaitAndPrint());
-            IEnumerator WaitAndPrint()
+    }
+
+    public void StartMiniGameCoroutine ()
+    {
+        StartCoroutine(WaitAndPrint());
+        IEnumerator WaitAndPrint()
+        {
+            while (startMiniGame)
             {
-                while (startMiniGame)
-                {
-                    //yield return new WaitForSeconds(waitTime);
-                    yield return new WaitForSecondsRealtime(2);
-                    randomIndex1 = random.Next(1, keyNames.Length);
-                    randomIndex2 = random.Next(1, keyNames.Length);
-                    key1 = keyNames[randomIndex1];
-                    key2 = keyNames[randomIndex2];
-                    Debug.Log("Smash" + key1 + " and " + key2);
-                }
+                yield return new WaitForSecondsRealtime(2);
+                randomIndex1 = random.Next(1, keyNames.Length);
+                randomIndex2 = random.Next(1, keyNames.Length);
+                key1 = keyNames[randomIndex1];
+                key2 = keyNames[randomIndex2];
+                Debug.Log("Smash " + key1 + " and " + key2);
             }
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -102,16 +110,21 @@ public class Sushi : MonoBehaviour
             Debug.Log("Minigame: mash correct buttons and delicious sushi!");
             //every 2 seconds print different keys, if player hits correctly add points, otherwise remove them
             startMiniGame = true;
-
-            if (Input.GetKeyDown(key1) && Input.GetKeyDown(key2)) {
+            StartMiniGameCoroutine();
+            Debug.Log("Players points " + AreYouWinningSon);
+            Debug.Log("In interact the keys is " + key1);
+            if (Input.GetKeyDown(key1) || Input.GetKeyDown(key2)) {
+                Debug.Log("winning");
                 AreYouWinningSon += 20.0f;
             } else {
+                Debug.Log("loosing");
                 AreYouWinningSon -= 15.0f;
             }
             Debug.Log("What time is it? " + timer);
             if(timer <= 0.0f) {
                 if (AreYouWinningSon >= 100.0f) {
                     Player.Weight += Weight;
+                    Debug.Log("lost the minigame");
                     Destroy(gameObject);
                     //Customer will leave somewhere here
                 }
