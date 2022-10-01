@@ -237,7 +237,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{ac24a3ef-2691-4472-99da-c71365829dbf}">
 		<property name="volume">
-			<value>-7.5</value>
+			<value>-19</value>
 		</property>
 		<property name="name">
 			<value>Matrix 1</value>
@@ -410,7 +410,7 @@
 			<value>ClonkinessVariety</value>
 		</property>
 		<property name="volume">
-			<value>-18.5</value>
+			<value>-34</value>
 		</property>
 		<property name="spawnRate">
 			<value>20</value>
@@ -1725,7 +1725,7 @@
 			<value>0.20442930153321975</value>
 		</property>
 		<property name="value">
-			<value>5.50000381</value>
+			<value>10</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{c2c2347f-7233-4a9a-b6ce-ff0e9b29cae7}">
@@ -1733,7 +1733,7 @@
 			<value>6.0136286201022147</value>
 		</property>
 		<property name="value">
-			<value>-32</value>
+			<value>-16.8869228</value>
 		</property>
 	</object>
 </objects>
