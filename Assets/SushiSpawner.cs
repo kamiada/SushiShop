@@ -6,7 +6,7 @@ public class SushiSpawner : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("spawnSushi", 1f, 0.1f);
+        InvokeRepeating("spawnSushi", 1f, 1f);
     }
 
     void spawnSushi()
@@ -29,13 +29,11 @@ public class SushiSpawner : MonoBehaviour
             case 3:
                 spawnedSushi.GetComponent<Sushi>().SushiPlateColour = Sushi.PlateColour.Green;
                 break;
-            default:
+            default:                
                 break;
         }
 
         // Shoot out sushi
         spawnedSushi.GetComponent<Rigidbody2D>().AddForce(new Vector2(-200f, 0f));
-    }
-
-    
+    }    
 }
