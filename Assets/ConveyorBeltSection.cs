@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class ConveyorBeltSection : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float BeltForce = 100f;
+    public GameObject NextSection;
+    [SerializeField] private Rigidbody2D currentSushiRb;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.tag == "Sushi")
+        {
+            currentSushiRb = collision.GetComponent<Rigidbody2D>();
+        }        
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.gameObject == currentSushiRb.gameObject)
+        {
+            currentSushiRb = null;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (currentSushiRb == null)
+            return;
         
+        Vector3 nextBeltDirection = NextSection.transform.position - currentSushiRb.transform.position;
+        currentSushiRb.AddForce(nextBeltDirection.normalized * BeltForce);        
     }
 }

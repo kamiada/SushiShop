@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WorldTime : MonoBehaviour
 {
@@ -17,7 +19,7 @@ public class WorldTime : MonoBehaviour
     {
         showTimeOnScreen.text = fullTime.ToString();
         if (fullTime <= 0.0f) {
-            LoadScrene("GameOver")
+            LoadScene("GameOver");
         }
     }
     public void LoadScene(string SceneName)
