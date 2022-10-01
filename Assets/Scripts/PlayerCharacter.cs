@@ -3,9 +3,11 @@ using UnityEngine;
 public class PlayerCharacter : MonoBehaviour
 {
     public KeyCode InteractKey;
+    public KeyCode AttackKey;
     public Sushi CurrentSushi;
     public float Speed = 0.5f;
     public float Weight = 0.5f; // Each sushi
+    public float AttackForce = 50f;
 
     Rigidbody2D rigidbody2D;
     Animator animator;
@@ -13,7 +15,7 @@ public class PlayerCharacter : MonoBehaviour
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     void FixedUpdate()
@@ -41,12 +43,38 @@ public class PlayerCharacter : MonoBehaviour
             if (CurrentSushi == null)
                 return;
 
-            // Add weight
-            //Weight += CurrentSushi.Weight;
-            //Debug.Log(Weight);
+            // Add weight and manage fatness sprite
+            Weight += CurrentSushi.Weight;
+            switch (Weight)
+            {
+                case 1.0f:
+                    animator.SetLayerWeight(1, 1.0f);
+                    break;
+                case 2.0f:
+                    animator.SetLayerWeight(2, 1.0f);
+                    break;
+                default:
+                    break;
+            }
 
             // If we're near a sushi, interact with it
-            CurrentSushi.Interact();
+            CurrentSushi.Interact();     
+
+        }
+
+        if (Input.GetKeyDown(AttackKey))
+        {
+            animator.SetTrigger("Attack");
+            Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 2f);
+
+            foreach (var hit in hits)
+            {
+                if (hit.GetComponent<Sushi>() != null)
+                {
+                    Vector2 attackForce = hit.transform.position - transform.position;
+                    hit.GetComponent<Rigidbody2D>().AddForce(attackForce.normalized * AttackForce);
+                }
+            }
         }
     }
 
@@ -57,9 +85,9 @@ public class PlayerCharacter : MonoBehaviour
             animator.SetBool("IsWalking", true);
 
             if (horizontalAxis < 0) // If moving left, flip sprite
-                GetComponent<SpriteRenderer>().flipX = true;
+                GetComponentInChildren<SpriteRenderer>().flipX = true;
             if (horizontalAxis > 0)
-                GetComponent<SpriteRenderer>().flipX = false;
+                GetComponentInChildren<SpriteRenderer>().flipX = false;
         }
 
         else
