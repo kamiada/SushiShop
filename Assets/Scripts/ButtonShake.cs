@@ -16,7 +16,7 @@ public class ButtonShake : MonoBehaviour
     private void Start()
     {
         image = GetComponentInParent<Image>();
-        TMProText = GetComponent<TextMeshProUGUI>();
+        TMProText = GetComponentInChildren<TextMeshProUGUI>();
 
         imgOrigPos = image.transform.position;
         txtOrigPos = TMProText.transform.position;

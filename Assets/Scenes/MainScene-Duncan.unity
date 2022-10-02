@@ -292,7 +292,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1796992816, guid: 20662b8813bb04a66b136d1297a2ded3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -587,11 +587,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerCharacter: {fileID: 2099346131}
   ConveyorBeltSetup: {fileID: 1636850923}
+  SushiSpawner: {fileID: 1268210751}
   GameOverPanel: {fileID: 7351160607981809305, guid: 38d17744931ab4ecab269cec16f41937, type: 3}
   WinPanel: {fileID: 8055228125271607014, guid: 14ed603f1fc8d4439b7f3206acb6ad3d, type: 3}
   GameEnded: 0
   ScoreText: {fileID: 919982281}
   WinScore: 500
+  Level1Score: 75
+  Level2Score: 200
+  Level3Score: 350
+  WeightDefeatValue: 7
 --- !u!1 &497663832
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 104.798676, y: 0.0015869141}
+  m_AnchoredPosition: {x: 93.4, y: 2}
   m_SizeDelta: {x: 98.6984, y: 102.7132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497663834
@@ -985,7 +990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1954691018874447895, guid: fa41248dd8beb447ab79d30936afe225, type: 3}
       propertyPath: MaxValue
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1954691018874447895, guid: fa41248dd8beb447ab79d30936afe225, type: 3}
       propertyPath: MinValue
@@ -2020,7 +2025,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.1656568, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -2762,9 +2767,9 @@ RectTransform:
   m_Father: {fileID: 1175607623}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -304, y: -203}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 174.7, y: 69.2}
   m_SizeDelta: {x: 330.7973, y: 112.1767}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &2075840011 stripped
@@ -2807,7 +2812,7 @@ MonoBehaviour:
   AttackKey: 101
   CurrentSushi: {fileID: 0}
   Speed: 100
-  Weight: 0.5
+  Weight: 1.25
   Energy: 100
   AttackForce: 800
   AttackEnergyCost: 25
@@ -3006,6 +3011,22 @@ PrefabInstance:
     - target: {fileID: 934199049474263245, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
       propertyPath: MinValue
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768522319446995523, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768522319446995523, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
+      propertyPath: m_MinValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768522319446995523, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768522319981037497, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
+      propertyPath: m_Type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8768522319981037498, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
       propertyPath: m_AnchorMax.x

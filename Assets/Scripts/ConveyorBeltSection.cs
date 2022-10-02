@@ -18,6 +18,9 @@ public class ConveyorBeltSection : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (currentSushiRb == null)
+            return;
+        
         if (collision.gameObject == currentSushiRb.gameObject)
         {
             currentSushiRb = null;

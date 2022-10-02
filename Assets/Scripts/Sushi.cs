@@ -37,22 +37,33 @@ public class Sushi : MonoBehaviour
     private IEnumerator coroutine;
     public bool startMiniGame = false;
 
+    public Sprite[] PlateSprites;
+    public Sprite[] SushiSprites;
+
 
     private void Start()
     {
+        SpriteRenderer plateSpriteRenderer = transform.GetChild(1).GetComponent<SpriteRenderer>();
+        SpriteRenderer sushiSpriteRenderer = GetComponent<SpriteRenderer>(); 
+
+        int randSushi = UnityEngine.Random.Range(0, 3);
+
         // Manage the colour of the sushi plate (to start different minigames)
         switch (SushiPlateColour)
         {
             case PlateColour.Red:
-                GetComponent<SpriteRenderer>().color = Color.red;
+                plateSpriteRenderer.sprite = PlateSprites[0];
+                sushiSpriteRenderer.sprite = SushiSprites[randSushi];
                 PointsValue = 15;
                 break;
             case PlateColour.Blue:
-                GetComponent<SpriteRenderer>().color = Color.blue;
+                plateSpriteRenderer.sprite = PlateSprites[1];
+                sushiSpriteRenderer.sprite = SushiSprites[3 + randSushi];
                 PointsValue = 25;
                 break;
             case PlateColour.Green:
-                GetComponent<SpriteRenderer>().color = Color.green;
+                plateSpriteRenderer.sprite = PlateSprites[2];
+                sushiSpriteRenderer.sprite = SushiSprites[6 + randSushi];
                 PointsValue = 50;
                 break;
             default:
@@ -95,7 +106,8 @@ public class Sushi : MonoBehaviour
         if (collision.tag == "Player")
         {
             playerInRadius = true;
-            collision.GetComponent<PlayerCharacter>().CurrentSushi = this;
+            if (collision.GetComponent<PlayerCharacter>() != null)
+                collision.GetComponent<PlayerCharacter>().CurrentSushi = this;
         }
     }
 
@@ -104,7 +116,8 @@ public class Sushi : MonoBehaviour
         if (collision.tag == "Player")
         {
             playerInRadius = false;
-            collision.GetComponent<PlayerCharacter>().CurrentSushi = null;
+            if (collision.GetComponent<PlayerCharacter>() != null)
+                collision.GetComponent<PlayerCharacter>().CurrentSushi = null;
         }
     }
 
