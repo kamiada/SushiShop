@@ -144,6 +144,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{a0e335a6-eace-4c2c-8a69-04e8d236ba06}">
+		<property name="volume">
+			<value>-4</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{d9ae4ea8-9396-4023-b17d-fd03685b7099}</destination>
 		</relationship>
@@ -553,7 +556,9 @@
 	<object class="MixerBusEffectChain" id="{d9ae4ea8-9396-4023-b17d-fd03685b7099}">
 		<relationship name="effects">
 			<destination>{a3a3c2f9-8029-4ef6-a1ac-ddff84bafb18}</destination>
+			<destination>{804b1167-c34b-435d-b30c-9bf796941e72}</destination>
 			<destination>{1b970b06-3f85-49c3-ba4f-93ccaa38fe72}</destination>
+			<destination>{9dd352d6-8eb8-42e4-83d8-daf9a6de5895}</destination>
 			<destination>{5f28d596-af51-43d8-8be2-564b82ba06db}</destination>
 		</relationship>
 	</object>
@@ -1170,7 +1175,17 @@
 			<value>10</value>
 		</property>
 	</object>
+	<object class="GainEffect" id="{804b1167-c34b-435d-b30c-9bf796941e72}">
+		<property name="gain">
+			<value>10</value>
+		</property>
+	</object>
 	<object class="GainEffect" id="{1b970b06-3f85-49c3-ba4f-93ccaa38fe72}">
+		<property name="gain">
+			<value>10</value>
+		</property>
+	</object>
+	<object class="GainEffect" id="{9dd352d6-8eb8-42e4-83d8-daf9a6de5895}">
 		<property name="gain">
 			<value>10</value>
 		</property>
