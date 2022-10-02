@@ -541,8 +541,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d8a67661b0744309df93109b29bbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerCharacter: {fileID: 0}
-  ConveyorBeltSetup: {fileID: 0}
+  PlayerCharacter: {fileID: 2099346131}
+  ConveyorBeltSetup: {fileID: 1636850923}
 --- !u!1 &497663832
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,6 +930,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944347927}
     m_Modifications:
+    - target: {fileID: 1954691018874447895, guid: fa41248dd8beb447ab79d30936afe225, type: 3}
+      propertyPath: Stat
+      value: Weight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954691018874447895, guid: fa41248dd8beb447ab79d30936afe225, type: 3}
+      propertyPath: MaxValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954691018874447895, guid: fa41248dd8beb447ab79d30936afe225, type: 3}
+      propertyPath: MinValue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7955196022237521787, guid: fa41248dd8beb447ab79d30936afe225, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2734,7 +2746,11 @@ MonoBehaviour:
   CurrentSushi: {fileID: 0}
   Speed: 100
   Weight: 0.5
+  Energy: 100
   AttackForce: 800
+  AttackEnergyCost: 15
+  AttackWeightCost: 1
+  EnergyDrain: 0.1
 --- !u!50 &2099346132
 Rigidbody2D:
   serializedVersion: 4
@@ -2917,6 +2933,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944347927}
     m_Modifications:
+    - target: {fileID: 934199049474263245, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
+      propertyPath: Stat
+      value: Energy
+      objectReference: {fileID: 0}
+    - target: {fileID: 934199049474263245, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
+      propertyPath: MaxValue
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 934199049474263245, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
+      propertyPath: MinValue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8768522319981037498, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

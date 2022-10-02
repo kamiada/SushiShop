@@ -500,6 +500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8768522320243483701}
+  - component: {fileID: 934199049474263245}
   m_Layer: 5
   m_Name: Energy Bar
   m_TagString: Untagged
@@ -529,6 +530,20 @@ RectTransform:
   m_AnchoredPosition: {x: 264.3, y: -272}
   m_SizeDelta: {x: 160, y: 48.3536}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &934199049474263245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8768522320243483702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c57dbda23a1464b98b81e1a14e1b93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxValue: 0
+  MinValue: 0
 --- !u!1 &8768522321255285116
 GameObject:
   m_ObjectHideFlags: 0

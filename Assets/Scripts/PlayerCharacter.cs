@@ -6,11 +6,16 @@ public class PlayerCharacter : MonoBehaviour
     public KeyCode AttackKey;
     public Sushi CurrentSushi;
     public float Speed = 0.5f;
-    public float Weight = 0.5f; // Each sushi
+    public float Weight = 0.5f; // Each sushi is 0.5f
+    public float Energy = 100f;
     public float AttackForce = 50f;
+    public float AttackEnergyCost = 25f;
+    public float AttackWeightCost = 0.5f;
+    public float EnergyDrain = 0.1f;    
 
     Rigidbody2D rigidbody2D;
     Animator animator;
+    bool isWalking = false;
 
     void Start()
     {
@@ -28,6 +33,7 @@ public class PlayerCharacter : MonoBehaviour
         rigidbody2D.AddForce(new Vector2(horizontalAxis, verticalAxis) * (Speed / Weight));
 
         ManageSpriteFlipping(horizontalAxis, verticalAxis);
+        ManageEnergy();
     }
 
     private void Update()
@@ -44,35 +50,34 @@ public class PlayerCharacter : MonoBehaviour
                 return;
 
             // Add weight and manage fatness sprite
-            Weight += CurrentSushi.Weight;
-            switch (Weight)
-            {
-                case 1.0f:
-                    animator.SetLayerWeight(1, 1.0f);
-                    break;
-                case 2.0f:
-                    animator.SetLayerWeight(2, 1.0f);
-                    break;
-                default:
-                    break;
-            }
+            Weight += CurrentSushi.WeightValue;
+            HandleFatnessSprite();
 
             // If we're near a sushi, interact with it
             CurrentSushi.Interact();     
 
         }
-
+        // Sushi Attack
         if (Input.GetKeyDown(AttackKey))
         {
-            animator.SetTrigger("Attack");
-            Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 2f);
-
-            foreach (var hit in hits)
+            if (Energy > 25f)
             {
-                if (hit.GetComponent<Sushi>() != null)
+                animator.SetTrigger("Attack");
+                Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 2f);
+
+                Energy -= AttackEnergyCost;
+                Weight -= AttackWeightCost;
+                if (Weight <= 0.5f)
+                    Weight = 0.5f;
+
+                HandleFatnessSprite();
+                foreach (var hit in hits)
                 {
-                    Vector2 attackForce = hit.transform.position - transform.position;
-                    hit.GetComponent<Rigidbody2D>().AddForce(attackForce.normalized * AttackForce);
+                    if (hit.GetComponent<Sushi>() != null)
+                    {
+                        Vector2 attackForce = hit.transform.position - transform.position;
+                        hit.GetComponent<Rigidbody2D>().AddForce(attackForce.normalized * AttackForce);
+                    }
                 }
             }
         }
@@ -83,14 +88,44 @@ public class PlayerCharacter : MonoBehaviour
         if (horizontalAxis != 0 || verticalAxis != 0)
         {
             animator.SetBool("IsWalking", true);
-
+            isWalking = true;
+           
             if (horizontalAxis < 0) // If moving left, flip sprite
                 GetComponentInChildren<SpriteRenderer>().flipX = true;
             if (horizontalAxis > 0)
                 GetComponentInChildren<SpriteRenderer>().flipX = false;
         }
-
         else
+        {
             animator.SetBool("IsWalking", false);
+            isWalking = false;
+        }            
+    }
+
+    void ManageEnergy()
+    {
+        if (isWalking)
+        {
+            Energy -= EnergyDrain;
+        }
+    }
+
+    void HandleFatnessSprite()
+    {
+        if (Weight < 1.0f)
+        {
+            animator.SetLayerWeight(1, 0.0f);
+            animator.SetLayerWeight(2, 0.0f);
+        }
+        else if (Weight >= 1.0f & Weight < 2.0f)
+        {
+            animator.SetLayerWeight(1, 1.0f);
+            animator.SetLayerWeight(2, 0.0f);
+        }
+        else if (Weight >= 2.0f)
+        {
+            animator.SetLayerWeight(1, 0.0f);
+            animator.SetLayerWeight(2, 1.0f);
+        }        
     }
 }

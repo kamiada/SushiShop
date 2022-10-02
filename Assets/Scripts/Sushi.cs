@@ -19,7 +19,8 @@ public class Sushi : MonoBehaviour
         Green,
     }
     public PlateColour SushiPlateColour;
-    public float Weight = 0.5f;
+    public float WeightValue = 0.5f;
+    public float EnergyValue = 25f;
 
     private bool playerInRadius = false;
 
@@ -105,6 +106,10 @@ public class Sushi : MonoBehaviour
 
     public void Interact()
     {
+        // Temporarily adding weight and energy to test balance, as if winning minigame
+        GameManager.Instance.PlayerCharacter.Energy += EnergyValue;
+        GameManager.Instance.PlayerCharacter.Weight += WeightValue;
+
         if (playerInRadius)
         {
             Debug.Log("Minigame: mash correct buttons and delicious sushi!");
@@ -123,7 +128,7 @@ public class Sushi : MonoBehaviour
             Debug.Log("What time is it? " + timer);
             if(timer <= 0.0f) {
                 if (AreYouWinningSon >= 100.0f) {
-                    Player.Weight += Weight;
+                    Player.Weight += WeightValue;
                     Debug.Log("lost the minigame");
                     Destroy(gameObject);
                     //Customer will leave somewhere here
