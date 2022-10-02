@@ -281,7 +281,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5661039706979830438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a729689030db47c0af189b8b6351baa, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e9527eac79fe45f48fb9ae095feaa57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ShakeRange: 15
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5661039706979830438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 354152289313946259b120b70512e9f7, type: 3}
+  m_Script: {fileID: 11500000, guid: d2fbb3e64944a49bda13d9eab775fc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2007563426771063872

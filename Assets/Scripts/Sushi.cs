@@ -21,12 +21,13 @@ public class Sushi : MonoBehaviour
     public PlateColour SushiPlateColour;
     public float WeightValue = 0.5f;
     public float EnergyValue = 25f;
+    public int PointsValue = 15;
 
     private bool playerInRadius = false;
 
     //mini game vars 
     public float AreYouWinningSon = 0.0f;
-    public float points = 15.0f;
+
     float timer = 4.0f;
     static string[] keyNames = new string[] { "space", "q", "e", "b", "c", "f", "g", "h", "l", "k", "m", "n","x", "z", "v", "r", "t", "p", "i"};
 
@@ -44,12 +45,15 @@ public class Sushi : MonoBehaviour
         {
             case PlateColour.Red:
                 GetComponent<SpriteRenderer>().color = Color.red;
+                PointsValue = 15;
                 break;
             case PlateColour.Blue:
                 GetComponent<SpriteRenderer>().color = Color.blue;
+                PointsValue = 25;
                 break;
             case PlateColour.Green:
                 GetComponent<SpriteRenderer>().color = Color.green;
+                PointsValue = 50;
                 break;
             default:
                 break;
@@ -109,6 +113,7 @@ public class Sushi : MonoBehaviour
         // Temporarily adding weight and energy to test balance, as if winning minigame
         GameManager.Instance.PlayerCharacter.Energy += EnergyValue;
         GameManager.Instance.PlayerCharacter.Weight += WeightValue;
+        GameManager.Instance.AddScore(PointsValue);
 
         if (playerInRadius)
         {
