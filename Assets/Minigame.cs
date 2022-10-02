@@ -19,7 +19,7 @@ public class Minigame : MonoBehaviour
     private Image currentSushiImage;
     private Sushi minigameFocusedSushi;
     private bool miniGameStarted;
-    static string[] keyNames = new string[] { "space", "q", "e", "b", "c", "f", "g", "h", "l", "k", "m", "n", "x", "z", "v", "r", "t", "p", "i" };
+    static string[] keyNames = new string[] { "q", "b", "c", "f", "g", "h", "l", "k", "m", "n", "x", "z", "v", "r", "t", "p", "i" };
     public string key1;
 
     private void Awake()
@@ -68,6 +68,7 @@ public class Minigame : MonoBehaviour
         {
             GameManager.Instance.PlayerCharacter.Weight += minigameFocusedSushi.WeightValue;
             GameManager.Instance.PlayerCharacter.Energy += minigameFocusedSushi.EnergyValue;
+            GameManager.Instance.AddScore(minigameFocusedSushi.PointsValue);
             Destroy(minigameFocusedSushi.gameObject);
             endMinigame();
             //Customer will leave somewhere here
