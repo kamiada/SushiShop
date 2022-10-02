@@ -1929,6 +1929,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SushiPrefab: {fileID: 6482484956459340250, guid: 46850a845b0484151938ef680cb25fa0, type: 3}
   SpawnDelay: 2
+  sound:
+    Guid:
+      Data1: 564237551
+      Data2: 1204008334
+      Data3: 2058169780
+      Data4: -243518338
+    Path: event:/SFX/Ambiance/BellSushiSpitOut
 --- !u!212 &1268210752
 SpriteRenderer:
   m_ObjectHideFlags: 0

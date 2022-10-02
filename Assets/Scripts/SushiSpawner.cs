@@ -5,6 +5,8 @@ public class SushiSpawner : MonoBehaviour
     public GameObject SushiPrefab;
     public float SpawnDelay = 2f;
 
+    public FMODUnity.EventReference sound;
+
     void Start()
     {
         InvokeRepeating("spawnSushi", 1f, SpawnDelay);
@@ -36,5 +38,8 @@ public class SushiSpawner : MonoBehaviour
 
         // Shoot out sushi
         spawnedSushi.GetComponent<Rigidbody2D>().AddForce(new Vector2(-200f, 0f));
+
+
+        FMODUnity.RuntimeManager.PlayOneShot(sound);
     }    
 }
