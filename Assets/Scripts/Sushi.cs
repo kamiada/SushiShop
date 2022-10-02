@@ -8,8 +8,7 @@ using Random = System.Random;
 
 public class Sushi : MonoBehaviour
 {
-    int randomIndex1;
-    Random random = new Random();
+
 
     public enum PlateColour
     {
@@ -24,13 +23,8 @@ public class Sushi : MonoBehaviour
 
     private bool playerInRadius = false;
 
-    //mini game vars 
-    public float AreYouWinningSon = 0.0f;
 
-    float timer = 4.0f;
-    static string[] keyNames = new string[] { "space", "q", "e", "b", "c", "f", "g", "h", "l", "k", "m", "n", "x", "z", "v", "r", "t", "p", "i" };
 
-    public string key1;
     public PlayerCharacter Player;
     private IEnumerator coroutine;
     public bool startMiniGame = false;
@@ -71,48 +65,10 @@ public class Sushi : MonoBehaviour
 
     public void Update()
     {
-        if (startMiniGame)
-        {
-            timer -= Time.deltaTime;
-        }
-        if (timer <= 0.0f)
-        {
-            startMiniGame = false;
-            timer = 4.0f;
-        }
 
     }
 
-    public void MiniGame()
-    {
-        if (startMiniGame)
-        {
-            randomIndex1 = random.Next(1, keyNames.Length);
-            key1 = keyNames[randomIndex1];
-            Debug.Log("Smash " + key1);
-            Debug.Log("Players points " + AreYouWinningSon);
-            if (Input.GetKeyDown(key1))
-            {
-                Debug.Log("winning");
-                AreYouWinningSon = AreYouWinningSon + 20.0f;
-            }
-            else
-            {
-                Debug.Log("loosing");
-                AreYouWinningSon = AreYouWinningSon - 15.0f;
-            }
 
-            if (AreYouWinningSon >= 100.0f)
-            {
-                Player.Weight += WeightValue;
-                Debug.Log("lost the minigame");
-                Destroy(gameObject);
-                //Customer will leave somewhere here
-            }
-            startMiniGame = false;
-
-        }
-    }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -148,7 +104,8 @@ public class Sushi : MonoBehaviour
             Debug.Log("Minigame: mash correct buttons and delicious sushi!");
             //every 2 seconds print different keys, if player hits correctly add points, otherwise remove them
             startMiniGame = true;
-            MiniGame();
+            // Make Panel Appear
+            GameManager.Instance.MinigamePanel.SetActive(true);
         }
     }
 }

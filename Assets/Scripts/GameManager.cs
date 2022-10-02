@@ -9,6 +9,7 @@ public class GameManager : GenericSingletonClass<GameManager>
     public GameObject WinPanel;
     public bool GameEnded = false;
     public TMPro.TextMeshProUGUI ScoreText;
+    public GameObject MinigamePanel;
 
     public int Score { get; private set; }
     public int WinScore = 500;
@@ -22,7 +23,7 @@ public class GameManager : GenericSingletonClass<GameManager>
         switch (stat)
         {
             case "Weight":
-                    return PlayerCharacter.Weight;
+                return PlayerCharacter.Weight;
             case "Energy":
                 return PlayerCharacter.Energy;
             default:
