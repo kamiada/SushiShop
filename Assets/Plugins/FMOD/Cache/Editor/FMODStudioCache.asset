@@ -42,9 +42,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Heaviness
   StudioPath: parameter:/Heaviness
-  Min: 0
-  Max: 1
-  Default: 0
+  Min: 0.5
+  Max: 4.5
+  Default: 2.5
   ID:
     data1: 570928190
     data2: 278607494
@@ -195,10 +195,10 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638003504998667225
+  lastModified: 638003511361745888
   FileSizes:
   - Name: Desktop
-    Value: 5601696
+    Value: 5984160
   Exists: 1
 --- !u!114 &-5025647624198183186
 MonoBehaviour:
@@ -350,7 +350,7 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638003504998718313
+  lastModified: 638003511361789739
   FileSizes:
   - Name: Desktop
     Value: 1412
@@ -440,7 +440,7 @@ MonoBehaviour:
   - {fileID: -5486455551108232051}
   StringsBanks:
   - {fileID: -2760717751001501679}
-  cacheTime: 638003504998718313
+  cacheTime: 638003511361789739
   cacheVersion: 131591
 --- !u!114 &202812129420466312
 MonoBehaviour:
@@ -585,9 +585,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Heaviness
   StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
+  Min: 0.5
+  Max: 4.5
+  Default: 2.5
   ID:
     data1: 570928190
     data2: 278607494
