@@ -16,6 +16,7 @@ public class PlayerCharacter : MonoBehaviour
     private PlayerSounds playerSounds;
 
 
+
     Rigidbody2D rigidbody2D;
     Animator animator;
     bool isWalking = false;
@@ -24,6 +25,7 @@ public class PlayerCharacter : MonoBehaviour
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+
     }
 
     void FixedUpdate()
@@ -37,6 +39,8 @@ public class PlayerCharacter : MonoBehaviour
 
         ManageSpriteFlipping(horizontalAxis, verticalAxis);
         ManageEnergy();
+
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Heaviness", Weight);
     }
 
     private void Update()
@@ -57,8 +61,9 @@ public class PlayerCharacter : MonoBehaviour
             HandleFatnessSprite();
 
             // If we're near a sushi, interact with it
-            CurrentSushi.Interact();     
+            CurrentSushi.Interact();
 
+           
         }
         // Sushi Attack
         if (Input.GetKeyDown(AttackKey))
