@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 185384298}
   - component: {fileID: 185384300}
   - component: {fileID: 185384299}
+  - component: {fileID: 185384301}
   m_Layer: 6
   m_Name: GFX
   m_TagString: Player
@@ -304,6 +305,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &185384301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185384297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0837af16f806b48de8d34dae7d264fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Footsteps:
+    Guid:
+      Data1: -1520637705
+      Data2: 1197960924
+      Data3: -2051423088
+      Data4: 1660433740
+    Path: event:/SFX/Footsteps
 --- !u!1001 &188502996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -788,7 +808,6 @@ GameObject:
   m_Component:
   - component: {fileID: 633634351}
   - component: {fileID: 633634350}
-  - component: {fileID: 633634349}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -796,14 +815,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &633634349
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633634348}
-  m_Enabled: 1
 --- !u!20 &633634350
 Camera:
   m_ObjectHideFlags: 0
@@ -2445,6 +2456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1636850924}
   - component: {fileID: 1636850923}
+  - component: {fileID: 1636850925}
   m_Layer: 0
   m_Name: ConveyorBelt
   m_TagString: Untagged
@@ -2503,6 +2515,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636850925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636850922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -669928932
+      Data2: 1307287292
+      Data3: 1820793736
+      Data4: -702310773
+    Path: event:/SFX/Ambiance/Conveyer Belt 2D
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1748035474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3164693141564153176, guid: ec2a2963eaffd40e6bef915be26af502, type: 3}
@@ -2751,6 +2793,7 @@ MonoBehaviour:
   AttackEnergyCost: 15
   AttackWeightCost: 1
   EnergyDrain: 0.1
+  playerSounds: {fileID: 0}
 --- !u!50 &2099346132
 Rigidbody2D:
   serializedVersion: 4

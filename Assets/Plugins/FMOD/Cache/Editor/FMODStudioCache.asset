@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8991108807773335636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Footsteps
+  Guid:
+    Data1: -1520637705
+    Data2: 1197960924
+    Data3: -2051423088
+    Data4: 1660433740
+  Banks:
+  - {fileID: 289404556488526200}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -61291265021288120}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 816
 --- !u!114 &-8126427889861132351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +43,65 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638002603932675607
+  lastModified: 638003146802143838
   FileSizes:
   - Name: Desktop
-    Value: 876
+    Value: 1076
   Exists: 1
+--- !u!114 &-8049792076838979488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambiance/RestAMB
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambiance/RestAMB
+  Guid:
+    Data1: -88908185
+    Data2: 1148847375
+    Data3: 679320978
+    Data4: 1200334537
+  Banks:
+  - {fileID: 289404556488526200}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20000
+--- !u!114 &-6281540068881082248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambiance/BellSushiSpitOut
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambiance/BellSushiSpitOut
+  Guid:
+    Data1: 564237551
+    Data2: 1204008334
+    Data3: 2058169780
+    Data4: -243518338
+  Banks:
+  - {fileID: 289404556488526200}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2570
 --- !u!114 &-3122588604727011311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,6 +129,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 23500
+--- !u!114 &-61291265021288120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Heaviness
+  m_EditorClassIdentifier: 
+  Name: Heaviness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 570928190
+    data2: 278607494
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,12 +170,16 @@ MonoBehaviour:
   - {fileID: 289404556488526200}
   EditorEvents:
   - {fileID: -3122588604727011311}
+  - {fileID: -8049792076838979488}
+  - {fileID: -6281540068881082248}
+  - {fileID: -8991108807773335636}
+  - {fileID: 3650294928993221001}
   EditorParameters: []
   MasterBanks:
   - {fileID: 289404556488526200}
   StringsBanks:
   - {fileID: -8126427889861132351}
-  cacheTime: 638002603932675607
+  cacheTime: 638003146802143838
   cacheVersion: 131591
 --- !u!114 &289404556488526200
 MonoBehaviour:
@@ -86,8 +196,35 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638002603932657855
+  lastModified: 638003146802103625
   FileSizes:
   - Name: Desktop
-    Value: 2529184
+    Value: 5207904
   Exists: 1
+--- !u!114 &3650294928993221001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambiance/Conveyer Belt 2D
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambiance/Conveyer Belt 2D
+  Guid:
+    Data1: -669928932
+    Data2: 1307287292
+    Data3: 1820793736
+    Data4: -702310773
+  Banks:
+  - {fileID: 289404556488526200}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23500

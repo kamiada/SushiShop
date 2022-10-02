@@ -11,7 +11,10 @@ public class PlayerCharacter : MonoBehaviour
     public float AttackForce = 50f;
     public float AttackEnergyCost = 25f;
     public float AttackWeightCost = 0.5f;
-    public float EnergyDrain = 0.1f;    
+    public float EnergyDrain = 0.1f;
+    [SerializeField]
+    private PlayerSounds playerSounds;
+
 
     Rigidbody2D rigidbody2D;
     Animator animator;
@@ -128,4 +131,13 @@ public class PlayerCharacter : MonoBehaviour
             animator.SetLayerWeight(2, 1.0f);
         }        
     }
+
+    //PlayFootstepFunction
+
+    private void Footstep()
+    {
+        GetComponentInChildren<PlayerSounds>().PlayFootsteps();
+        //PlayerSounds.PlayFootsteps();
+    }
+
 }
