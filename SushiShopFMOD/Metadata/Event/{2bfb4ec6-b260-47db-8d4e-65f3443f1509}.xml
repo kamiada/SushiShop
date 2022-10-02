@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{2bfb4ec6-b260-47db-8d4e-65f3443f1509}">
 		<property name="name">
-			<value>New Event</value>
+			<value>Atack</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -34,6 +34,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{fe55e2bd-a1ee-49c9-b450-665521b9f196}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{c811642d-9bce-4d4a-890f-eb953293f091}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{cbce04a3-a171-40c8-99bc-2f8e10af2f02}">
@@ -109,6 +112,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{9c549d2d-5a7f-45d7-8d1b-a0e4bb1a2a43}">
+		<property name="volume">
+			<value>6</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{6c2c1fc4-2198-433a-a218-eb32e5ec0619}</destination>
 		</relationship>

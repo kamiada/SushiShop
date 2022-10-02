@@ -7,9 +7,11 @@ public class FMODAudioPosting : MonoBehaviour
    
     public FMODUnity.EventReference sound;
 
+
     void Start()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(sound);    }
+        FMODUnity.RuntimeManager.PlayOneShot(sound);
+    }
 
 
 }

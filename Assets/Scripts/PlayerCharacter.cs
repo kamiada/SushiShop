@@ -12,8 +12,11 @@ public class PlayerCharacter : MonoBehaviour
     public float AttackEnergyCost = 25f;
     public float AttackWeightCost = 0.5f;
     public float EnergyDrain = 0.1f;
+    public FMODUnity.EventReference SushiAttackSound;
+
     [SerializeField]
     private PlayerSounds playerSounds;
+   
 
 
 
@@ -68,6 +71,9 @@ public class PlayerCharacter : MonoBehaviour
         // Sushi Attack
         if (Input.GetKeyDown(AttackKey))
         {
+
+            FMODUnity.RuntimeManager.PlayOneShot(SushiAttackSound);
+
             if (Energy > 25f)
             {
                 animator.SetTrigger("Attack");
