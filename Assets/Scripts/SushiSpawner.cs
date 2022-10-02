@@ -3,10 +3,11 @@ using UnityEngine;
 public class SushiSpawner : MonoBehaviour
 {
     public GameObject SushiPrefab;
+    public float SpawnDelay = 2f;
 
     void Start()
     {
-        Invoke("spawnSushi", 1f);
+        InvokeRepeating("spawnSushi", 1f, SpawnDelay);
     }
 
     void spawnSushi()
@@ -29,13 +30,11 @@ public class SushiSpawner : MonoBehaviour
             case 3:
                 spawnedSushi.GetComponent<Sushi>().SushiPlateColour = Sushi.PlateColour.Green;
                 break;
-            default:
+            default:                
                 break;
         }
 
         // Shoot out sushi
-        spawnedSushi.GetComponent<Rigidbody2D>().AddForce(new Vector2(-100f, 0f));
-    }
-
-    
+        spawnedSushi.GetComponent<Rigidbody2D>().AddForce(new Vector2(-200f, 0f));
+    }    
 }
