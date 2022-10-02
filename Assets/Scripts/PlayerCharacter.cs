@@ -72,10 +72,13 @@ public class PlayerCharacter : MonoBehaviour
         if (Input.GetKeyDown(AttackKey))
         {
 
-            FMODUnity.RuntimeManager.PlayOneShot(SushiAttackSound);
+            
 
             if (Energy > 25f)
             {
+
+                FMODUnity.RuntimeManager.PlayOneShot(SushiAttackSound);
+
                 animator.SetTrigger("Attack");
                 Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 2f);
 
