@@ -114,6 +114,7 @@ public class Sushi : MonoBehaviour
         GameManager.Instance.PlayerCharacter.Energy += EnergyValue;
         GameManager.Instance.PlayerCharacter.Weight += WeightValue;
         GameManager.Instance.AddScore(PointsValue);
+        Destroy(gameObject);
 
         if (playerInRadius)
         {

@@ -539,11 +539,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8768522320243483702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22c57dbda23a1464b98b81e1a14e1b93, type: 3}
+  m_Script: {fileID: 11500000, guid: 690b8db6a5bda4bba839b1851492b8eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxValue: 0
+  MaxValue: 100
   MinValue: 0
+  Stat: Energy
 --- !u!1 &8768522321255285116
 GameObject:
   m_ObjectHideFlags: 0

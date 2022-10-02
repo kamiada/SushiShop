@@ -591,7 +591,7 @@ MonoBehaviour:
   WinPanel: {fileID: 8055228125271607014, guid: 14ed603f1fc8d4439b7f3206acb6ad3d, type: 3}
   GameEnded: 0
   ScoreText: {fileID: 919982281}
-  WinScore: 100
+  WinScore: 500
 --- !u!1 &497663832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,6 +1219,7 @@ GameObject:
   - component: {fileID: 919982280}
   - component: {fileID: 919982282}
   - component: {fileID: 919982281}
+  - component: {fileID: 919982283}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -1343,6 +1344,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919982279}
   m_CullTransparentMesh: 1
+--- !u!114 &919982283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919982279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309270ff0c1484615a55031801af1610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &933009510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1599,7 +1612,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1135060034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7e5205a7696499c9c98f2682632aa4, type: 3}
+  m_Script: {fileID: 11500000, guid: ccb1368472589451b8e746e85f56c0c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &1135060037
@@ -2797,9 +2810,9 @@ MonoBehaviour:
   Weight: 0.5
   Energy: 100
   AttackForce: 800
-  AttackEnergyCost: 15
+  AttackEnergyCost: 25
   AttackWeightCost: 1
-  EnergyDrain: 0.1
+  EnergyDrain: 0.15
 --- !u!50 &2099346132
 Rigidbody2D:
   serializedVersion: 4
