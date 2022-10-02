@@ -43,10 +43,10 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638003219717038087
+  lastModified: 638003304215958746
   FileSizes:
   - Name: Desktop
-    Value: 1076
+    Value: 1132
   Exists: 1
 --- !u!114 &-8049792076838979488
 MonoBehaviour:
@@ -102,6 +102,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2570
+--- !u!114 &-4971220187127274580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ambiance/3rdAttempt Conveyer Belt
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ambiance/3rdAttempt Conveyer Belt
+  Guid:
+    Data1: -567149642
+    Data2: 1197981983
+    Data3: 1286117279
+    Data4: -1631100794
+  Banks:
+  - {fileID: 289404556488526200}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23500
 --- !u!114 &-3122588604727011311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,12 +201,13 @@ MonoBehaviour:
   - {fileID: -6281540068881082248}
   - {fileID: -8991108807773335636}
   - {fileID: 3650294928993221001}
+  - {fileID: -4971220187127274580}
   EditorParameters: []
   MasterBanks:
   - {fileID: 289404556488526200}
   StringsBanks:
   - {fileID: -8126427889861132351}
-  cacheTime: 638003219717038087
+  cacheTime: 638003304215958746
   cacheVersion: 131591
 --- !u!114 &289404556488526200
 MonoBehaviour:
@@ -196,10 +224,10 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638003219716986372
+  lastModified: 638003304215901902
   FileSizes:
   - Name: Desktop
-    Value: 5208128
+    Value: 5235808
   Exists: 1
 --- !u!114 &3650294928993221001
 MonoBehaviour:
