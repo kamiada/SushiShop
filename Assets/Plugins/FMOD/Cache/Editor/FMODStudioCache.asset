@@ -28,6 +28,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 816
+--- !u!114 &-8280224887316793659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Open
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Open
+  Guid:
+    Data1: -674046681
+    Data2: 1202011926
+    Data3: 905350035
+    Data4: -89713143
+  Banks:
+  - {fileID: 289404556488526200}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1072
 --- !u!114 &-8126427889861132351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,10 +70,10 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638003219717038087
+  lastModified: 638003301140694772
   FileSizes:
   - Name: Desktop
-    Value: 1076
+    Value: 1238
   Exists: 1
 --- !u!114 &-8049792076838979488
 MonoBehaviour:
@@ -102,6 +129,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2570
+--- !u!114 &-4197362868001874147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Hover
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Hover
+  Guid:
+    Data1: 1531455113
+    Data2: 1084184289
+    Data3: 1033821839
+    Data4: -2063063358
+  Banks:
+  - {fileID: 289404556488526200}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1101
 --- !u!114 &-3122588604727011311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +183,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 23500
+--- !u!114 &-1283428898766693846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Negative
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Negative
+  Guid:
+    Data1: 2131407362
+    Data2: 1323962805
+    Data3: -313733488
+    Data4: -1498459617
+  Banks:
+  - {fileID: 289404556488526200}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1101
 --- !u!114 &-61291265021288120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,14 +224,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Heaviness
   StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
+  Min: 0.5
+  Max: 5
+  Default: 0.5
   ID:
     data1: 570928190
     data2: 278607494
   Type: 0
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &11400000
@@ -173,13 +254,18 @@ MonoBehaviour:
   - {fileID: -8049792076838979488}
   - {fileID: -6281540068881082248}
   - {fileID: -8991108807773335636}
-  - {fileID: 3650294928993221001}
-  EditorParameters: []
+  - {fileID: -1283428898766693846}
+  - {fileID: -8280224887316793659}
+  - {fileID: 3507713021207196189}
+  - {fileID: -4197362868001874147}
+  - {fileID: 738858983625909613}
+  EditorParameters:
+  - {fileID: 3117501429541461778}
   MasterBanks:
   - {fileID: 289404556488526200}
   StringsBanks:
   - {fileID: -8126427889861132351}
-  cacheTime: 638003219717038087
+  cacheTime: 638003301140694772
   cacheVersion: 131591
 --- !u!114 &289404556488526200
 MonoBehaviour:
@@ -196,12 +282,12 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638003219716986372
+  lastModified: 638003301140614813
   FileSizes:
   - Name: Desktop
-    Value: 5208128
+    Value: 5218976
   Exists: 1
---- !u!114 &3650294928993221001
+--- !u!114 &738858983625909613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,20 +297,71 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Ambiance/Conveyer Belt 2D
+  m_Name: event:/UI/Positive
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Ambiance/Conveyer Belt 2D
+  Path: event:/UI/Positive
   Guid:
-    Data1: -669928932
-    Data2: 1307287292
-    Data3: 1820793736
-    Data4: -702310773
+    Data1: -746980214
+    Data2: 1096532083
+    Data3: 228514442
+    Data4: 23355343
   Banks:
   - {fileID: 289404556488526200}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 23500
+  Length: 1101
+--- !u!114 &3117501429541461778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Heaviness
+  m_EditorClassIdentifier: 
+  Name: Heaviness
+  StudioPath: parameter:/Heaviness
+  Min: 0.5
+  Max: 5
+  Default: 0.5
+  ID:
+    data1: 570928190
+    data2: 278607494
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3507713021207196189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Close
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Close
+  Guid:
+    Data1: -1564604616
+    Data2: 1213228826
+    Data3: -370636610
+    Data4: 930070453
+  Banks:
+  - {fileID: 289404556488526200}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1266
