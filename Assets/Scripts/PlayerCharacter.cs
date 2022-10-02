@@ -104,9 +104,17 @@ public class PlayerCharacter : MonoBehaviour
 
     void ManageEnergy()
     {
-        if (isWalking)
+        if (isWalking & Energy > 0)
         {
             Energy -= EnergyDrain;
+            if (Energy <= 0)
+                Energy = 0;
+        }
+
+        if (Energy <= 0 & !GameManager.Instance.GameEnded)
+        {
+            GameManager.Instance.GameOver();
+            Destroy(this);
         }
     }
 

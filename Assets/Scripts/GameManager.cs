@@ -1,7 +1,11 @@
+using UnityEngine;
+
 public class GameManager : GenericSingletonClass<GameManager>
 {
     public PlayerCharacter PlayerCharacter;
     public ConveyorBeltSetup ConveyorBeltSetup;
+    public GameObject GameOverPanel;
+    public bool GameEnded = false;
 
     public float GetPlayerStat(string stat)
     {
@@ -14,5 +18,15 @@ public class GameManager : GenericSingletonClass<GameManager>
             default:
                 return 0f;
         }
+    }
+
+    public void GameOver()
+    {
+        GameEnded = true;
+        // Set death animation
+        // Disable player controller
+
+        // Show Game Over UI
+        Instantiate(GameOverPanel, FindObjectOfType<Canvas>().transform);
     }
 }

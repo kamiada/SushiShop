@@ -543,6 +543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerCharacter: {fileID: 2099346131}
   ConveyorBeltSetup: {fileID: 1636850923}
+  GameOverPanel: {fileID: 7351160607981809305, guid: 38d17744931ab4ecab269cec16f41937, type: 3}
+  GameEnded: 0
 --- !u!1 &497663832
 GameObject:
   m_ObjectHideFlags: 0
