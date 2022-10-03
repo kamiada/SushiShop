@@ -16,19 +16,20 @@ public class PlayerCharacter : MonoBehaviour
 
     [SerializeField]
     private PlayerSounds playerSounds;
-   
+
 
 
 
     Rigidbody2D rigidbody2D;
     Animator animator;
     bool isWalking = false;
+    float origWeight;
 
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
-
+        origWeight = Weight;
     }
 
     void FixedUpdate()
@@ -38,7 +39,7 @@ public class PlayerCharacter : MonoBehaviour
         float horizontalAxis = Input.GetAxisRaw("Horizontal");
         float verticalAxis = Input.GetAxisRaw("Vertical");
 
-        rigidbody2D.AddForce(new Vector2(horizontalAxis, verticalAxis) * (Speed / Weight));
+        rigidbody2D.AddForce(new Vector2(horizontalAxis, verticalAxis) * (Speed / (Weight / 3)));
 
         ManageSpriteFlipping(horizontalAxis, verticalAxis);
         ManageEnergy();
@@ -63,16 +64,21 @@ public class PlayerCharacter : MonoBehaviour
             Weight += CurrentSushi.WeightValue;
             HandleFatnessSprite();
 
+            if (Weight >= GameManager.Instance.WeightDefeatValue)
+            {
+                GameManager.Instance.GameOver();
+            }
+
             // If we're near a sushi, interact with it
             CurrentSushi.Interact();
 
-           
+
         }
         // Sushi Attack
         if (Input.GetKeyDown(AttackKey))
         {
 
-            
+
 
             if (Energy > 25f)
             {
@@ -84,8 +90,8 @@ public class PlayerCharacter : MonoBehaviour
 
                 Energy -= AttackEnergyCost;
                 Weight -= AttackWeightCost;
-                if (Weight <= 0.5f)
-                    Weight = 0.5f;
+                if (Weight <= origWeight)
+                    Weight = origWeight;
 
                 HandleFatnessSprite();
                 foreach (var hit in hits)
@@ -106,7 +112,7 @@ public class PlayerCharacter : MonoBehaviour
         {
             animator.SetBool("IsWalking", true);
             isWalking = true;
-           
+
             if (horizontalAxis < 0) // If moving left, flip sprite
                 GetComponentInChildren<SpriteRenderer>().flipX = true;
             if (horizontalAxis > 0)
@@ -116,14 +122,22 @@ public class PlayerCharacter : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
             isWalking = false;
-        }            
+        }
     }
 
     void ManageEnergy()
     {
-        if (isWalking)
+        if (isWalking & Energy > 0)
         {
             Energy -= EnergyDrain;
+            if (Energy <= 0)
+                Energy = 0;
+        }
+
+        if (Energy <= 0 & !GameManager.Instance.GameEnded)
+        {
+            GameManager.Instance.GameOver();
+            Destroy(this);
         }
     }
 
@@ -143,7 +157,7 @@ public class PlayerCharacter : MonoBehaviour
         {
             animator.SetLayerWeight(1, 0.0f);
             animator.SetLayerWeight(2, 1.0f);
-        }        
+        }
     }
 
     //PlayFootstepFunction
