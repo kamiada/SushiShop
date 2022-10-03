@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class SushiSpawner : MonoBehaviour
@@ -10,8 +9,7 @@ public class SushiSpawner : MonoBehaviour
 
     void Start()
     {
-        //InvokeRepeating("spawnSushi", 1f, SpawnDelay);
-        StartCoroutine("SushiSpawnCoroutine");
+        InvokeRepeating("spawnSushi", 1f, SpawnDelay);
     }
 
     void spawnSushi()
@@ -21,9 +19,9 @@ public class SushiSpawner : MonoBehaviour
         // Choose random sushi plate colour
         // TODO: Choose random sushi type too
         // TODO: Make random selection more scaleable
-        int randPlate = Random.Range(1, 4);
+        int randVal = Random.Range(1, 4);
 
-        switch (randPlate)
+        switch (randVal)
         {
             case 1:
                 spawnedSushi.GetComponent<Sushi>().SushiPlateColour = Sushi.PlateColour.Red;
@@ -34,20 +32,14 @@ public class SushiSpawner : MonoBehaviour
             case 3:
                 spawnedSushi.GetComponent<Sushi>().SushiPlateColour = Sushi.PlateColour.Green;
                 break;
-            default:
+            default:                
                 break;
         }
 
         // Shoot out sushi
         spawnedSushi.GetComponent<Rigidbody2D>().AddForce(new Vector2(-200f, 0f));
 
-        FMODUnity.RuntimeManager.PlayOneShot(sound);
-    }
 
-    IEnumerator SushiSpawnCoroutine()
-    {
-        spawnSushi();
-        yield return new WaitForSeconds(SpawnDelay);
-        StartCoroutine("SushiSpawnCoroutine");
-    }
-  }
+        FMODUnity.RuntimeManager.PlayOneShot(sound);
+    }    
+}

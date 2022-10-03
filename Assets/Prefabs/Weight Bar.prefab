@@ -7,18 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 934199049474263245, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
-      propertyPath: Stat
-      value: Weight
-      objectReference: {fileID: 0}
-    - target: {fileID: 934199049474263245, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
-      propertyPath: MaxValue
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 934199049474263245, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
-      propertyPath: MinValue
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 8768522319718548629, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
       propertyPath: m_text
       value: 'Weight
@@ -32,26 +20,6 @@ PrefabInstance:
     - target: {fileID: 8768522319981037497, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
       propertyPath: m_Color.g
       value: 0.4419814
-      objectReference: {fileID: 0}
-    - target: {fileID: 8768522319981037498, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8768522319981037498, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8768522320069445537, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8768522320069445537, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8768522320069445537, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8768522320243483701, guid: 75767f6efc9304b46a8fd8598933faca, type: 3}
       propertyPath: m_Pivot.x
