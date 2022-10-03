@@ -195,10 +195,10 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638003983373262217
+  lastModified: 638003996726885475
   FileSizes:
   - Name: Desktop
-    Value: 5983936
+    Value: 6116832
   Exists: 1
 --- !u!114 &-5025647624198183186
 MonoBehaviour:
@@ -350,10 +350,10 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638003946433271748
+  lastModified: 638003996726955511
   FileSizes:
   - Name: Desktop
-    Value: 1412
+    Value: 1450
   Exists: 1
 --- !u!114 &-792581154344159734
 MonoBehaviour:
@@ -434,13 +434,14 @@ MonoBehaviour:
   - {fileID: -7393172422853384058}
   - {fileID: 1080330291221320865}
   - {fileID: 6438066729657268349}
+  - {fileID: 5022195707425451638}
   EditorParameters:
   - {fileID: -8181032116457419462}
   MasterBanks:
   - {fileID: -5486455551108232051}
   StringsBanks:
   - {fileID: -2760717751001501679}
-  cacheTime: 638003983373262217
+  cacheTime: 638003996726955511
   cacheVersion: 131591
 --- !u!114 &202812129420466312
 MonoBehaviour:
@@ -595,6 +596,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &5022195707425451638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player Interactions/Eat Low
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player Interactions/Eat Low
+  Guid:
+    Data1: 428771618
+    Data2: 1213654728
+    Data3: -2029147469
+    Data4: 1358401665
+  Banks:
+  - {fileID: -5486455551108232051}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2150
 --- !u!114 &6438066729657268349
 MonoBehaviour:
   m_ObjectHideFlags: 0
