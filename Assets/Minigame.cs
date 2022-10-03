@@ -22,6 +22,8 @@ public class Minigame : MonoBehaviour
     static string[] keyNames = new string[] { "q", "b", "c", "f", "g", "h", "l", "k", "m", "n", "x", "z", "v", "r", "t", "p", "i" };
     public string key1;
 
+    public FMODUnity.EventReference SushiEatSound;
+
     private void Awake()
     {
         GameManager.Instance.MinigamePanel = gameObject;
@@ -55,6 +57,8 @@ public class Minigame : MonoBehaviour
             AreYouWinningSon = AreYouWinningSon + 20.0f;
             Slider.value += 0.2f;
             KevinAnimator.SetTrigger("Chomp");
+
+            FMODUnity.RuntimeManager.PlayOneShot(SushiEatSound);
         }
         //else if (!Input.GetKeyDown(key1))
         //{

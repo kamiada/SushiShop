@@ -195,10 +195,10 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638003996726885475
+  lastModified: 638004010463196741
   FileSizes:
   - Name: Desktop
-    Value: 6116832
+    Value: 6307392
   Exists: 1
 --- !u!114 &-5025647624198183186
 MonoBehaviour:
@@ -308,6 +308,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 23500
+--- !u!114 &-3153407080375511105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player Interactions/Eat High
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player Interactions/Eat High
+  Guid:
+    Data1: 650240298
+    Data2: 1182848490
+    Data3: -1374212973
+    Data4: -723950416
+  Banks:
+  - {fileID: -5486455551108232051}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1200
 --- !u!114 &-3122588604727011311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,10 +377,10 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638003996726955511
+  lastModified: 638004010463286733
   FileSizes:
   - Name: Desktop
-    Value: 1450
+    Value: 1530
   Exists: 1
 --- !u!114 &-792581154344159734
 MonoBehaviour:
@@ -435,13 +462,15 @@ MonoBehaviour:
   - {fileID: 1080330291221320865}
   - {fileID: 6438066729657268349}
   - {fileID: 5022195707425451638}
+  - {fileID: -3153407080375511105}
+  - {fileID: 9190976696884705720}
   EditorParameters:
   - {fileID: -8181032116457419462}
   MasterBanks:
   - {fileID: -5486455551108232051}
   StringsBanks:
   - {fileID: -2760717751001501679}
-  cacheTime: 638003996726955511
+  cacheTime: 638004010463286733
   cacheVersion: 131591
 --- !u!114 &202812129420466312
 MonoBehaviour:
@@ -622,7 +651,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2150
+  Length: 1400
 --- !u!114 &6438066729657268349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,3 +733,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 23500
+--- !u!114 &9190976696884705720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Player Interactions/Eat Med
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Player Interactions/Eat Med
+  Guid:
+    Data1: -969724691
+    Data2: 1128115558
+    Data3: -2128431485
+    Data4: -1735597294
+  Banks:
+  - {fileID: -5486455551108232051}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1080
