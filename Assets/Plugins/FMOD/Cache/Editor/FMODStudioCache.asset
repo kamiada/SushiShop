@@ -195,10 +195,10 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638004265096522684
+  lastModified: 638004290116181960
   FileSizes:
   - Name: Desktop
-    Value: 8593568
+    Value: 11573152
   Exists: 1
 --- !u!114 &-5025647624198183186
 MonoBehaviour:
@@ -454,10 +454,10 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638004265096532987
+  lastModified: 638004290116291966
   FileSizes:
   - Name: Desktop
-    Value: 1644
+    Value: 1752
   Exists: 1
 --- !u!114 &-2681848722460025730
 MonoBehaviour:
@@ -487,6 +487,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 88689
+--- !u!114 &-1346752786008655177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Main Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Main Menu Music
+  Guid:
+    Data1: 1994431139
+    Data2: 1304390004
+    Data3: -1341291635
+    Data4: -1593281802
+  Banks:
+  - {fileID: -5486455551108232051}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30413
 --- !u!114 &-792581154344159734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,6 +598,8 @@ MonoBehaviour:
   - {fileID: 9190976696884705720}
   - {fileID: -2681848722460025730}
   - {fileID: -4156435704677539932}
+  - {fileID: 319978958186260260}
+  - {fileID: -1346752786008655177}
   EditorParameters:
   - {fileID: -8181032116457419462}
   - {fileID: 6961626940163460276}
@@ -578,7 +607,7 @@ MonoBehaviour:
   - {fileID: -5486455551108232051}
   StringsBanks:
   - {fileID: -2760717751001501679}
-  cacheTime: 638004265096532987
+  cacheTime: 638004290116291966
   cacheVersion: 131591
 --- !u!114 &202812129420466312
 MonoBehaviour:
@@ -627,6 +656,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 5235808
   Exists: 1
+--- !u!114 &319978958186260260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/In-Game-Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/In-Game-Music
+  Guid:
+    Data1: 522769222
+    Data2: 1322605684
+    Data3: -722888274
+    Data4: -2000277387
+  Banks:
+  - {fileID: -5486455551108232051}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 184012
 --- !u!114 &1080330291221320865
 MonoBehaviour:
   m_ObjectHideFlags: 0
