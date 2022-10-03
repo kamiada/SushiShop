@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 2c3ae328959e14983a01ca83007e85fb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 175
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SushiOnly_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 701.3334
+        width: 339
+        height: 350.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c57c7e8492624f5da2e7d2a468ec525
+      internalID: -1542379191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_1
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 701.3334
+        width: 339
+        height: 350.66666
+      alignment: 9
+      pivot: {x: 0.7019777, y: 0.66271496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d0cac55c1af433194c84437d010825
+      internalID: 1939312593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_2
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 701.3334
+        width: 339
+        height: 350.66666
+      alignment: 9
+      pivot: {x: 0.5961797, y: 0.6766619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4c03202a8fe48c0862a3067f2a54ba
+      internalID: 935592988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_3
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 701.3334
+        width: 339
+        height: 350.66666
+      alignment: 9
+      pivot: {x: 0.5, y: 0.64876777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a8c271eeef245a58d570bc9ae4bdea
+      internalID: 1523533946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351.33334
+        width: 339
+        height: 350.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c266ea2495974708878f751697f6afe
+      internalID: -511621435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 351.33334
+        width: 339
+        height: 350.66666
+      alignment: 9
+      pivot: {x: 0.69716877, y: 0.54184085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc0223b6d4b147478ad54bae2c42aff
+      internalID: 1609171925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_6
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 351.33334
+        width: 339
+        height: 350.66666
+      alignment: 9
+      pivot: {x: 0.6538876, y: 0.58833086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5e6a991fee340e4be017315f545b2a
+      internalID: -1493205103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_7
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 351.33334
+        width: 339
+        height: 350.66666
+      alignment: 9
+      pivot: {x: 0.5192363, y: 0.57903284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39895692fd67f49d48eb00ecfc84405f
+      internalID: -571132205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.3333435
+        width: 339
+        height: 350.66666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e588f6e0e0b74c84a3ef4b32feab04a
+      internalID: -888623525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_9
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1.3333435
+        width: 339
+        height: 350.66666
+      alignment: 9
+      pivot: {x: 0.7115957, y: 0.49999988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef9382050e594707a344eb4eb646bb0
+      internalID: -1138668939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_10
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 1.3333435
+        width: 339
+        height: 350.66666
+      alignment: 9
+      pivot: {x: 0.69716877, y: 0.5325429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87e5ad91db9c43cdb373765dee19206
+      internalID: -1841193722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SushiOnly_11
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 1.3333435
+        width: 339
+        height: 350.66666
+      alignment: 9
+      pivot: {x: 0.6202252, y: 0.54184085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1e298e438d14754b5151e94134b281
+      internalID: 539363074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SushiOnly_2: 935592988
+      SushiOnly_3: 1523533946
+      SushiOnly_1: 1939312593
+      SushiOnly_6: -1493205103
+      SushiOnly_4: -511621435
+      SushiOnly_11: 539363074
+      SushiOnly_10: -1841193722
+      SushiOnly_8: -888623525
+      SushiOnly_5: 1609171925
+      SushiOnly_0: -1542379191
+      SushiOnly_9: -1138668939
+      SushiOnly_7: -571132205
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
