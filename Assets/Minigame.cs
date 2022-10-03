@@ -14,6 +14,7 @@ public class Minigame : MonoBehaviour
     public float AreYouWinningSon = 0.0f;
     int randomIndex1;
     Random random = new Random();
+    public Animator CustomerAnimator;
     float timer = 2f;
 
     private Image currentSushiImage;
@@ -21,6 +22,7 @@ public class Minigame : MonoBehaviour
     private bool miniGameStarted;
     static string[] keyNames = new string[] { "q", "b", "c", "f", "g", "h", "l", "k", "m", "n", "x", "z", "v", "r", "t", "p", "i" };
     public string key1;
+    
 
     public FMODUnity.EventReference SushiEatSound;
     public FMODUnity.EventReference SushiEatSound2;
@@ -28,8 +30,9 @@ public class Minigame : MonoBehaviour
     public FMODUnity.EventReference SushiEatSound4;
 
     private void Awake()
-    {
+    {        
         GameManager.Instance.MinigamePanel = gameObject;
+        gameObject.SetActive(false);
     }
     private void Start()
     {
@@ -82,7 +85,9 @@ public class Minigame : MonoBehaviour
             GameManager.Instance.AddScore(minigameFocusedSushi.PointsValue);
             Destroy(minigameFocusedSushi.gameObject);
             FMODUnity.RuntimeManager.PlayOneShot(SushiEatSound4);
+            CustomerAnimator.SetTrigger("Anger");
             endMinigame();
+
             //Customer will leave somewhere here
         }
 

@@ -12,6 +12,7 @@ public class SushiSpawner : MonoBehaviour
     {
         //InvokeRepeating("spawnSushi", 1f, SpawnDelay);
         StartCoroutine("SushiSpawnCoroutine");
+        GameManager.Instance.SushiSpawner = this;
     }
 
     void spawnSushi()
