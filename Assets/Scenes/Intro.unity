@@ -459,6 +459,7 @@ GameObject:
   - component: {fileID: 994692941}
   - component: {fileID: 994692940}
   - component: {fileID: 994692939}
+  - component: {fileID: 994692943}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -555,6 +556,18 @@ MonoBehaviour:
           m_StringArgument: MainScene-Duncan
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 994692943}
+        m_TargetAssemblyTypeName: DestroyMusicObject, Assembly-CSharp
+        m_MethodName: DestroyTheMusicObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &994692941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,6 +606,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994692937}
   m_CullTransparentMesh: 1
+--- !u!114 &994692943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994692937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93dd900818bd54c54a0a7c9daa022610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1540000143
 GameObject:
   m_ObjectHideFlags: 0

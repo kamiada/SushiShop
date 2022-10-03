@@ -195,7 +195,7 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638004290116181960
+  lastModified: 638004294394913928
   FileSizes:
   - Name: Desktop
     Value: 11573152
@@ -454,7 +454,7 @@ MonoBehaviour:
   Path: SushiShopFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638004290116291966
+  lastModified: 638004294395057967
   FileSizes:
   - Name: Desktop
     Value: 1752
@@ -607,7 +607,7 @@ MonoBehaviour:
   - {fileID: -5486455551108232051}
   StringsBanks:
   - {fileID: -2760717751001501679}
-  cacheTime: 638004290116291966
+  cacheTime: 638004294395057967
   cacheVersion: 131591
 --- !u!114 &202812129420466312
 MonoBehaviour:
