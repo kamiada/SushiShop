@@ -14,6 +14,7 @@ public class Minigame : MonoBehaviour
     public float AreYouWinningSon = 0.0f;
     int randomIndex1;
     Random random = new Random();
+    public Animator CustomerAnimator;
     float timer = 2f;
 
     private Image currentSushiImage;
@@ -21,10 +22,12 @@ public class Minigame : MonoBehaviour
     private bool miniGameStarted;
     static string[] keyNames = new string[] { "q", "b", "c", "f", "g", "h", "l", "k", "m", "n", "x", "z", "v", "r", "t", "p", "i" };
     public string key1;
+    
 
     private void Awake()
-    {
+    {        
         GameManager.Instance.MinigamePanel = gameObject;
+        gameObject.SetActive(false);
     }
     private void Start()
     {
@@ -70,7 +73,9 @@ public class Minigame : MonoBehaviour
             GameManager.Instance.PlayerCharacter.Energy += minigameFocusedSushi.EnergyValue;
             GameManager.Instance.AddScore(minigameFocusedSushi.PointsValue);
             Destroy(minigameFocusedSushi.gameObject);
+            CustomerAnimator.SetTrigger("Anger");
             endMinigame();
+
             //Customer will leave somewhere here
         }
 

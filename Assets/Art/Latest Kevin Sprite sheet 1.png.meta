@@ -157,6 +157,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Latest Kevin Sprite sheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 551
+        width: 259
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26515ec16d99f4f2d83170dccca4a25b
+      internalID: 58259121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Latest Kevin Sprite sheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 138
+        width: 259
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cd2a81b25b84618a9bd5855f2e4604
+      internalID: -732114879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -169,7 +211,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Latest Kevin Sprite sheet_0: 1915866371
+      Latest Kevin Sprite sheet 1_0: 58259121
       Latest Kevin Sprite sheet_1: -1893544786
+      Latest Kevin Sprite sheet 1_1: -732114879
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

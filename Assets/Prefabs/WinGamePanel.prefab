@@ -15,22 +15,39 @@ PrefabInstance:
       propertyPath: m_text
       value: MORE SUSHI! MORE!!
       objectReference: {fileID: 0}
+    - target: {fileID: 4516958923445390718, guid: 38d17744931ab4ecab269cec16f41937, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f57d9116ee28f4aaeac2e7422afc1897, type: 3}
+    - target: {fileID: 7351160606455767210, guid: 38d17744931ab4ecab269cec16f41937, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 7351160606455767211, guid: 38d17744931ab4ecab269cec16f41937, type: 3}
       propertyPath: m_text
       value: '<b>You have won</b>
 
 
-        Kevin has transcended what it means to
-        be human and has become <i>one</i> with the sushi.
+
+        Kevin has transcended what it means
+        to be human and has become <i>one</i> with the sushi.
 
 
         He has become
         the one true <i>Sushi Bushi.'
       objectReference: {fileID: 0}
+    - target: {fileID: 7351160606455767211, guid: 38d17744931ab4ecab269cec16f41937, type: 3}
+      propertyPath: m_margin.y
+      value: -53.58914
+      objectReference: {fileID: 0}
     - target: {fileID: 7351160607981809305, guid: 38d17744931ab4ecab269cec16f41937, type: 3}
       propertyPath: m_Name
       value: WinGamePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 7351160607981809316, guid: 38d17744931ab4ecab269cec16f41937, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f57d9116ee28f4aaeac2e7422afc1897, type: 3}
     - target: {fileID: 7351160607981809318, guid: 38d17744931ab4ecab269cec16f41937, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
