@@ -31,6 +31,9 @@
 		<relationship name="timeline">
 			<destination>{880e18c1-e2a2-464e-ac3c-f2de3dd28b3c}</destination>
 		</relationship>
+		<relationship name="parameters">
+			<destination>{958be2d3-415b-46e1-ba6b-3f545c3fb472}</destination>
+		</relationship>
 		<relationship name="banks">
 			<destination>{c811642d-9bce-4d4a-890f-eb953293f091}</destination>
 		</relationship>
@@ -59,6 +62,9 @@
 	<object class="EventAutomatableProperties" id="{11b0ae0b-790f-4fd4-9451-453f1b0831f8}" />
 	<object class="MarkerTrack" id="{7cf6df15-35cc-4531-a158-d8ffd5fdd19d}" />
 	<object class="GroupTrack" id="{300aba98-2b16-455a-8773-306ee6937231}">
+		<relationship name="automationTracks">
+			<destination>{68d0e2c2-92d0-4b7a-91b4-5b99f41a9e31}</destination>
+		</relationship>
 		<relationship name="modules">
 			<destination>{2d5313ad-bf9f-4f39-8f21-8d5cd4706614}</destination>
 		</relationship>
@@ -69,6 +75,11 @@
 	<object class="Timeline" id="{880e18c1-e2a2-464e-ac3c-f2de3dd28b3c}">
 		<relationship name="modules">
 			<destination>{2d5313ad-bf9f-4f39-8f21-8d5cd4706614}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProxy" id="{958be2d3-415b-46e1-ba6b-3f545c3fb472}">
+		<relationship name="preset">
+			<destination>{d1150e4e-77e3-4d58-86ae-9af4c0c2db05}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{a3c979fa-ad9d-40f5-bed2-390914250bc7}">
@@ -91,6 +102,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c301490b-3a62-4b4d-ab34-82f5168b6fc3}" />
+	<object class="AutomationTrack" id="{68d0e2c2-92d0-4b7a-91b4-5b99f41a9e31}">
+		<relationship name="automator">
+			<destination>{7e4f2933-d9de-4837-9b4e-16d434319719}</destination>
+		</relationship>
+	</object>
 	<object class="MultiSound" id="{2d5313ad-bf9f-4f39-8f21-8d5cd4706614}">
 		<property name="length">
 			<value>1.4000000000000001</value>
@@ -129,6 +145,9 @@
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
+		<relationship name="automators">
+			<destination>{7e4f2933-d9de-4837-9b4e-16d434319719}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{a853ddbb-db17-4fad-b4e2-f681539e236d}</destination>
 		</relationship>
@@ -221,6 +240,14 @@
 			<destination>{b4c86e05-3add-4d6d-9117-a3d3048aa553}</destination>
 		</relationship>
 	</object>
+	<object class="Automator" id="{7e4f2933-d9de-4837-9b4e-16d434319719}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{cd960b55-1224-4855-adf1-b3ffe7d6c898}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{a853ddbb-db17-4fad-b4e2-f681539e236d}">
 		<relationship name="effects">
 			<destination>{b585fab5-27ef-4068-a12a-ef054a3c85e4}</destination>
@@ -229,6 +256,15 @@
 	</object>
 	<object class="MixerBusPanner" id="{d801e138-c02e-499d-8ce5-5d8bd8254714}" />
 	<object class="MixerBusFader" id="{d08b67f9-127f-40cb-8b25-2b429fa030ec}" />
+	<object class="AutomationCurve" id="{cd960b55-1224-4855-adf1-b3ffe7d6c898}">
+		<relationship name="parameter">
+			<destination>{d1150e4e-77e3-4d58-86ae-9af4c0c2db05}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{18128d87-33ba-4ce8-865b-b2d0e1efe697}</destination>
+			<destination>{086ab0d0-7be3-4725-9156-1ce476501e5a}</destination>
+		</relationship>
+	</object>
 	<object class="FlangerEffect" id="{b585fab5-27ef-4068-a12a-ef054a3c85e4}">
 		<property name="rate">
 			<value>5</value>
@@ -238,4 +274,20 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{84eb5785-523b-4b27-9e36-1a8e3a4e1e3a}" />
+	<object class="AutomationPoint" id="{18128d87-33ba-4ce8-865b-b2d0e1efe697}">
+		<property name="position">
+			<value>3.1584564860426929</value>
+		</property>
+		<property name="value">
+			<value>10</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{086ab0d0-7be3-4725-9156-1ce476501e5a}">
+		<property name="position">
+			<value>3.3000000000000003</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
+		</property>
+	</object>
 </objects>

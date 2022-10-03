@@ -23,6 +23,8 @@ public class Minigame : MonoBehaviour
     public string key1;
 
     public FMODUnity.EventReference SushiEatSound;
+    public FMODUnity.EventReference SushiEatSound2;
+    public FMODUnity.EventReference SushiEatSound3;
 
     private void Awake()
     {
@@ -59,6 +61,8 @@ public class Minigame : MonoBehaviour
             KevinAnimator.SetTrigger("Chomp");
 
             FMODUnity.RuntimeManager.PlayOneShot(SushiEatSound);
+            FMODUnity.RuntimeManager.PlayOneShot(SushiEatSound2);
+            FMODUnity.RuntimeManager.PlayOneShot(SushiEatSound3);
         }
         //else if (!Input.GetKeyDown(key1))
         //{
