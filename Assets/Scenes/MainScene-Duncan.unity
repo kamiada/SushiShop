@@ -1097,7 +1097,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633634348}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &633634350
 Camera:
   m_ObjectHideFlags: 0
@@ -2240,6 +2240,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1194596060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194596061}
+  m_Layer: 0
+  m_Name: Audio amb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1194596061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194596060}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.5069, y: -0.9963368, z: 0.000053860967}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1263778226}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1246516688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2377,6 +2409,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2a2963eaffd40e6bef915be26af502, type: 3}
+--- !u!1 &1263778225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263778226}
+  - component: {fileID: 1263778227}
+  m_Layer: 0
+  m_Name: RestaurantAmbiance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263778226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263778225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1194596061}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263778227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263778225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -88908185
+      Data2: 1148847375
+      Data3: 679320978
+      Data4: 1200334537
+    Path: event:/SFX/Ambiance/RestAMB
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1268210750
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,6 +2503,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SushiPrefab: {fileID: 6482484956459340250, guid: 46850a845b0484151938ef680cb25fa0, type: 3}
   SpawnDelay: 2
+  sound:
+    Guid:
+      Data1: 564237551
+      Data2: 1204008334
+      Data3: 2058169780
+      Data4: -243518338
+    Path: event:/SFX/Ambiance/BellSushiSpitOut
 --- !u!212 &1268210752
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3535,6 +3636,7 @@ GameObject:
   - component: {fileID: 2099346132}
   - component: {fileID: 2099346131}
   - component: {fileID: 2099346135}
+  - component: {fileID: 2099346136}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -3564,6 +3666,14 @@ MonoBehaviour:
   AttackEnergyCost: 25
   AttackWeightCost: 1
   EnergyDrain: 0.15
+  SushiAttackSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  playerSounds: {fileID: 0}
 --- !u!50 &2099346132
 Rigidbody2D:
   serializedVersion: 4
@@ -3617,6 +3727,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.97}
   serializedVersion: 2
   m_Radius: 0.6
+--- !u!114 &2099346136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099346130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1001 &2127188207
 PrefabInstance:
   m_ObjectHideFlags: 0
