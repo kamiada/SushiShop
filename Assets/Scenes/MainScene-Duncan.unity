@@ -1557,6 +1557,13 @@ MonoBehaviour:
   KevinAnimator: {fileID: 1833154937}
   AreYouWinningSon: 0
   key1: 
+  SushiEatSound:
+    Guid:
+      Data1: 650240298
+      Data2: 1182848490
+      Data3: -1374212973
+      Data4: -723950416
+    Path: event:/SFX/Player Interactions/Eat High
 --- !u!114 &786318676
 MonoBehaviour:
   m_ObjectHideFlags: 0
