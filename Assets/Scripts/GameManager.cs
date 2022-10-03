@@ -18,6 +18,8 @@ public class GameManager : GenericSingletonClass<GameManager>
     public int Level3Score = 400;
     public float WeightDefeatValue = 10.0f;
 
+    public FMODUnity.EventReference MinigameClosesound;
+
     public float GetPlayerStat(string stat)
     {
         switch (stat)
@@ -51,6 +53,7 @@ public class GameManager : GenericSingletonClass<GameManager>
     {
         Score += amount;
         ScoreText.text = "Score: " + Score;
+        FMODUnity.RuntimeManager.PlayOneShot(MinigameClosesound);
 
         if (Score >= WinScore )
         {
