@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b297b4fb-9d33-43bd-8076-4dedf5fbf4b6}">
+		<property name="assetPath">
+			<value>SushiMMM_01-022.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.2569160997732425</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b8392e71-55f0-4e12-94d2-ef05af73c76f}</destination>
+		</relationship>
+	</object>
+</objects>
