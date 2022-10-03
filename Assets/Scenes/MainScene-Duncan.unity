@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 185384298}
   - component: {fileID: 185384300}
   - component: {fileID: 185384299}
+  - component: {fileID: 185384301}
   m_Layer: 6
   m_Name: GFX
   m_TagString: Player
@@ -337,6 +338,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &185384301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185384297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0837af16f806b48de8d34dae7d264fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Footsteps:
+    Guid:
+      Data1: -1520637705
+      Data2: 1197960924
+      Data3: -2051423088
+      Data4: 1660433740
+    Path: event:/SFX/Player Interactions/Footsteps
 --- !u!1001 &188502996
 PrefabInstance:
   m_ObjectHideFlags: 0
