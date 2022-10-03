@@ -3688,11 +3688,11 @@ MonoBehaviour:
   EnergyDrain: 0.15
   SushiAttackSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 737889990
+      Data2: 1205580384
+      Data3: -211464563
+      Data4: 152387396
+    Path: event:/SFX/Player Interactions/Atack
   playerSounds: {fileID: 0}
 --- !u!50 &2099346132
 Rigidbody2D:

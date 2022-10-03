@@ -174,7 +174,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{fab3ecad-faad-47e3-88a6-846c74cc06a6}">
 		<property name="volume">
-			<value>-33</value>
+			<value>-20</value>
 		</property>
 		<property name="name">
 			<value>Earthquake</value>
@@ -206,7 +206,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{dcb5cf59-7391-4207-84d7-31141c964eb1}">
 		<property name="volume">
-			<value>-20</value>
+			<value>-15.5</value>
 		</property>
 		<property name="name">
 			<value>EarthQuakeMid</value>
@@ -227,6 +227,9 @@
 		</property>
 		<property name="length">
 			<value>2</value>
+		</property>
+		<property name="volume">
+			<value>3.5</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{9ddca93c-ea6b-461e-a63c-203a1f465654}</destination>
@@ -251,9 +254,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{a66a7afb-87ea-4481-884c-3e9af2c056ab}">
-		<property name="volume">
-			<value>-8</value>
-		</property>
 		<property name="name">
 			<value>PlatesHigh</value>
 		</property>
@@ -276,6 +276,9 @@
 		</property>
 		<property name="length">
 			<value>2</value>
+		</property>
+		<property name="volume">
+			<value>1.5</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{7e1dbc01-da5e-46c2-822a-710700c43910}</destination>
@@ -305,9 +308,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{3c7741ab-8882-468f-8aa8-f17911db1dda}">
-		<property name="volume">
-			<value>-10.5</value>
-		</property>
 		<property name="name">
 			<value>PlatesMid</value>
 		</property>
@@ -370,7 +370,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{bd60e0e4-4e2f-4f8a-b36e-d870d0ff3f2c}">
 		<property name="volume">
-			<value>-11</value>
+			<value>-6.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -406,7 +406,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{8163c5b9-9365-48f4-b546-c2c785b20a5e}">
 		<property name="volume">
-			<value>-10</value>
+			<value>-5.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
@@ -445,7 +445,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{401bc987-7f27-4558-ac4f-346f61962480}">
 		<property name="volume">
-			<value>-24</value>
+			<value>-27</value>
 		</property>
 		<property name="name">
 			<value>Audio 3</value>
