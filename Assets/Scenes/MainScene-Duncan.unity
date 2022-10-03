@@ -1586,6 +1586,13 @@ MonoBehaviour:
       Data3: -2128431485
       Data4: -1735597294
     Path: event:/SFX/Player Interactions/Eat Med
+  SushiEatSound4:
+    Guid:
+      Data1: 290055858
+      Data2: 1090601844
+      Data3: -1599453786
+      Data4: -46246530
+    Path: event:/SFX/Player Interactions/Tasty
 --- !u!114 &786318676
 MonoBehaviour:
   m_ObjectHideFlags: 0

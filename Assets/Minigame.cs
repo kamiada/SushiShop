@@ -25,6 +25,7 @@ public class Minigame : MonoBehaviour
     public FMODUnity.EventReference SushiEatSound;
     public FMODUnity.EventReference SushiEatSound2;
     public FMODUnity.EventReference SushiEatSound3;
+    public FMODUnity.EventReference SushiEatSound4;
 
     private void Awake()
     {
@@ -63,6 +64,8 @@ public class Minigame : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot(SushiEatSound);
             FMODUnity.RuntimeManager.PlayOneShot(SushiEatSound2);
             FMODUnity.RuntimeManager.PlayOneShot(SushiEatSound3);
+            
+
         }
         //else if (!Input.GetKeyDown(key1))
         //{
@@ -78,6 +81,7 @@ public class Minigame : MonoBehaviour
             GameManager.Instance.PlayerCharacter.Energy += minigameFocusedSushi.EnergyValue;
             GameManager.Instance.AddScore(minigameFocusedSushi.PointsValue);
             Destroy(minigameFocusedSushi.gameObject);
+            FMODUnity.RuntimeManager.PlayOneShot(SushiEatSound4);
             endMinigame();
             //Customer will leave somewhere here
         }
